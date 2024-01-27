@@ -23,6 +23,9 @@ public class RestApi {
   private static boolean readyA;
   private static boolean readyB;
 
+  private static float accuracyA;
+  private static float accuracyB;
+
   /**
    * The main entry point to run the Server Rest API.
    */
@@ -76,6 +79,61 @@ public class RestApi {
       builder.add("ready", true);
     } else {
       builder.add("ready", false);
+    }
+    JsonObject json = builder.build();
+    return json.toString();
+  }
+
+  @PostMapping(
+      value = "/submitAccuracy", 
+      produces = MediaType.APPLICATION_JSON_VALUE)
+  public String submitAccuracy(@RequestBody Map<String, String> request) {
+    String identifier = request.get("ID");
+    String accuracyString = request.get("Accuracy");
+    float accuracy = Float.parseFloat(accuracyString);
+
+    if (identifier.equals("A")) {
+      accuracyA = accuracy;
+    } 
+    else if (identifier.equals("B")) {
+      accuracyB = accuracy;
+    }
+    
+
+    Thread thread = new Thread(() -> {
+      try {
+        Thread.sleep(15000); // Sleep for 5 seconds (5000 milliseconds)
+        System.out.println("Thread woke up after 5 seconds, now set both to false");
+        accuracyA = -1; accuracyB = -1;
+      } catch (InterruptedException e) {
+        // Handle interruption
+      }
+    });
+  
+    thread.start(); // Start the thread
+
+    JsonObjectBuilder builder = Json.createObjectBuilder()
+          .add("recieved", true);
+
+    JsonObject json = builder.build();
+
+    return json.toString();
+  }
+
+  @GetMapping(
+    value = "/getAccuracy", 
+    produces = MediaType.APPLICATION_JSON_VALUE)
+  public String getAccuracy() {
+    JsonObjectBuilder builder = Json.createObjectBuilder();
+    if (accuracyA > 0 && accuracyB > 0) {
+      if (accuracyA > accuracyB) {
+        builder.add("winner", "A");
+      } else {
+        builder.add("winner", "B");
+      }
+      
+    } else {
+      builder.add("winner", "None");
     }
     JsonObject json = builder.build();
     return json.toString();

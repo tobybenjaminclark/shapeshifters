@@ -9,13 +9,21 @@
   "instanceCreationOrder": [
     {"name":"inst_576FDF25","path":"rooms/rmLobby/rmLobby.yy",},
     {"name":"inst_66B895EA","path":"rooms/rmLobby/rmLobby.yy",},
+<<<<<<< HEAD
     {"name":"inst_30494E81","path":"rooms/rmLobby/rmLobby.yy",},
+=======
+    {"name":"inst_523DBFEA","path":"rooms/rmLobby/rmLobby.yy",},
+>>>>>>> 979a12dbdb316c1bb9fa3aff8149e0a32b969b93
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66B895EA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oComputerVisionClient","path":"objects/oComputerVisionClient/oComputerVisionClient.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":32.0,},
+<<<<<<< HEAD
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_30494E81","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTCPClient","path":"objects/oTCPClient/oTCPClient.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":352.0,},
+=======
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_523DBFEA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTCPClient","path":"objects/oTCPClient/oTCPClient.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":384.0,},
+>>>>>>> 979a12dbdb316c1bb9fa3aff8149e0a32b969b93
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Spotlight","depth":100,"effectEnabled":true,"effectType":"_filter_dots","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_DotsScale","type":0,"value":"512",},
