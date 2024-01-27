@@ -81,6 +81,14 @@ if variable_struct_exists(jsonData, "s2w")
 	if(jsonData.s2h != -1) global.PlayerPose.s2w = jsonData.s2w;
 }
         
+if (global.client_socket != -1)
+{
+	send_tcp_message(jsonData);
+}
+else
+{
+	show_message("couldn't sent message");
+}
 
 buffer_seek(send_buffer, buffer_seek_start,0);
 buffer_write(send_buffer, buffer_string, "received");
