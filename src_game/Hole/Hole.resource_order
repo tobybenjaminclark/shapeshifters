@@ -33,10 +33,12 @@
     {"name":"sprBegin","order":4,"path":"sprites/sprBegin/sprBegin.yy",},
     {"name":"sprLobbyLights","order":1,"path":"sprites/sprLobbyLights/sprLobbyLights.yy",},
     {"name":"sprForearm","order":3,"path":"sprites/sprForearm/sprForearm.yy",},
+    {"name":"send_message","order":1,"path":"scripts/send_message/send_message.yy",},
     {"name":"sprLogo","order":3,"path":"sprites/sprLogo/sprLogo.yy",},
     {"name":"sprStage","order":7,"path":"sprites/sprStage/sprStage.yy",},
     {"name":"sprHead","order":1,"path":"sprites/sprHead/sprHead.yy",},
     {"name":"sprThigh","order":4,"path":"sprites/sprThigh/sprThigh.yy",},
+    {"name":"receive_message","order":2,"path":"scripts/receive_message/receive_message.yy",},
     {"name":"sprPodium","order":4,"path":"sprites/sprPodium/sprPodium.yy",},
   ],
 }
