@@ -60,7 +60,10 @@ class ComputerVision():
         self.model.allocate_tensors()
 
         # Get video input from primary camera
-        self.cap = cv2.VideoCapture(0)
+        try:
+            self.cap = cv2.VideoCapture(1)
+        except Exception as e:
+            self.cap = cv2.VideoCapture(0)
 
     def run(self):
         # Capture frame-by-frame
@@ -163,6 +166,9 @@ class ComputerVision():
         shoulder_to_head = self.calculate_shoulder_to_head(keypoints)
         angle_dict["s2h"] = shoulder_to_head
 
+        shoulder_to_hip = self.calculate_hip_to_shoulder(keypoints)
+        angle_dict["s2w"] = shoulder_to_hip
+
 
         return angle_dict
 
@@ -236,7 +242,33 @@ class ComputerVision():
 
         return angle
 
+    def calculate_hip_to_shoulder(self, keypoints):
+        left_shoulder_y, left_shoulder_x, left_shoulder_conf = keypoints[KEYPOINT_DICT["left_shoulder"]]
+        right_shoulder_y, right_shoulder_x, right_shoulder_conf = keypoints[KEYPOINT_DICT["right_shoulder"]]
+
+        if(left_shoulder_conf < CONFIDENCE_THRESHOLD or right_shoulder_conf < CONFIDENCE_THRESHOLD):
+            return -1
         
+        shoulder_x_midpoint = (left_shoulder_x + right_shoulder_x) / 2
+        shoulder_y_midpoint = (left_shoulder_y + right_shoulder_y) / 2
+
+        left_hip_y, left_hip_x, left_hip_conf = keypoints[KEYPOINT_DICT["left_hip"]]
+        right_hip_y, right_hip_x, right_hip_conf = keypoints[KEYPOINT_DICT["right_hip"]]
+
+        if(left_hip_conf < CONFIDENCE_THRESHOLD or right_hip_conf < CONFIDENCE_THRESHOLD):
+            return -1
+        
+        hip_x_midpoint = (left_hip_x + right_hip_x) / 2
+        hip_y_midpoint = (left_hip_y + right_hip_y) / 2
+
+        angle = math.degrees(math.atan2(hip_y_midpoint - shoulder_y_midpoint, hip_x_midpoint - shoulder_x_midpoint)) + 180
+
+        print(f"shoulder to hip: {angle}")
+
+        return angle
+
+
+
 
 
 
