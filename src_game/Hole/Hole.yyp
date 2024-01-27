@@ -61,7 +61,7 @@
     {"id":{"name":"sprHead","path":"sprites/sprHead/sprHead.yy",},},
     {"id":{"name":"sprBody","path":"sprites/sprBody/sprBody.yy",},},
     {"id":{"name":"sprThigh","path":"sprites/sprThigh/sprThigh.yy",},},
-    {"id":{"name":"receive_message","path":"scripts/receive_message/receive_message.yy",},},
+    {"id":{"name":"Script3","path":"scripts/Script3/Script3.yy",},},
     {"id":{"name":"sprPodium","path":"sprites/sprPodium/sprPodium.yy",},},
     {"id":{"name":"rmLobby","path":"rooms/rmLobby/rmLobby.yy",},},
   ],
