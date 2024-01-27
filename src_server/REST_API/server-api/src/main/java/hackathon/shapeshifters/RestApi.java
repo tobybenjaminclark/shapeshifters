@@ -32,7 +32,7 @@ public class RestApi {
   public static void main(String[] args) {
     readyA = false;
     readyB = false;
-
+    System.setProperty("server.address", "0.0.0.0");
     SpringApplication.run(RestApi.class, args);
   }
 
