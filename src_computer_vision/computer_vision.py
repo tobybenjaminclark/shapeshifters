@@ -60,10 +60,7 @@ class ComputerVision():
         self.model.allocate_tensors()
 
         # Get video input from primary camera
-        try:
-            self.cap = cv2.VideoCapture(1)
-        except Exception as e:
-            self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(0)
 
     def run(self):
         # Capture frame-by-frame
