@@ -24,7 +24,7 @@ public class RestApi {
   private static boolean readyB;
 
   /**
-   * The main entry point to run the Client Rest API.
+   * The main entry point to run the Server Rest API.
    */
   public static void main(String[] args) {
     readyA = false;
