@@ -20,7 +20,10 @@
   "ResourceOrderSettings": [
     {"name":"oTCPClient","order":3,"path":"objects/oTCPClient/oTCPClient.yy",},
     {"name":"sprLogoOverlay","order":2,"path":"sprites/sprLogoOverlay/sprLogoOverlay.yy",},
+    {"name":"sprYou","order":2,"path":"sprites/sprYou/sprYou.yy",},
     {"name":"StageGrad","order":1,"path":"sprites/StageGrad/StageGrad.yy",},
+    {"name":"oOtherPlayerPose","order":4,"path":"objects/oOtherPlayerPose/oOtherPlayerPose.yy",},
+    {"name":"sprThem","order":3,"path":"sprites/sprThem/sprThem.yy",},
     {"name":"sprUpperArm","order":2,"path":"sprites/sprUpperArm/sprUpperArm.yy",},
     {"name":"rmMatchPose","order":2,"path":"rooms/rmMatchPose/rmMatchPose.yy",},
     {"name":"sprFoot","order":5,"path":"sprites/sprFoot/sprFoot.yy",},

@@ -38,7 +38,10 @@
   "resources": [
     {"id":{"name":"oTCPClient","path":"objects/oTCPClient/oTCPClient.yy",},},
     {"id":{"name":"sprLogoOverlay","path":"sprites/sprLogoOverlay/sprLogoOverlay.yy",},},
+    {"id":{"name":"sprYou","path":"sprites/sprYou/sprYou.yy",},},
     {"id":{"name":"StageGrad","path":"sprites/StageGrad/StageGrad.yy",},},
+    {"id":{"name":"oOtherPlayerPose","path":"objects/oOtherPlayerPose/oOtherPlayerPose.yy",},},
+    {"id":{"name":"sprThem","path":"sprites/sprThem/sprThem.yy",},},
     {"id":{"name":"sprUpperArm","path":"sprites/sprUpperArm/sprUpperArm.yy",},},
     {"id":{"name":"rmMatchPose","path":"rooms/rmMatchPose/rmMatchPose.yy",},},
     {"id":{"name":"sprFoot","path":"sprites/sprFoot/sprFoot.yy",},},
