@@ -39,13 +39,13 @@ draw_sprite_ext(sprThigh, 0, x - (40), y + (100), SCALING_FACTOR, SCALING_FACTOR
 draw_sprite_ext(sprThigh, 0, x + (40), y + (100), SCALING_FACTOR, SCALING_FACTOR, pose.h2rk, c_white, 1); // R
 
 // Right Shin Calculations
-rf_x = (x + 40) + lengthdir_x(155, pose.rk2rf); // R X
-rf_y = (y + 100) + lengthdir_y(155, pose.rk2rf); // R Y
+rf_x = (x + 40) + lengthdir_x(155, pose.h2lk);  // R X
+rf_y = (y + 100) + lengthdir_y(155, pose.h2lk); // R Y
 
 
 // Left Shin Calculations
-lf_x = (x - 40) + lengthdir_x(155, pose.lk2lf); // L X
-lf_y = (y + 100) + lengthdir_y(155, pose.lk2lf); // L Y
+lf_x = (x - 40) + lengthdir_x(155, pose.h2lk);  // L X
+lf_y = (y + 100) + lengthdir_y(155, pose.h2lk); // L Y
 
 // Draw Left & Right Shin
 draw_sprite_ext(sprFoot, 0, lf_x, lf_y, SCALING_FACTOR, SCALING_FACTOR, pose.lk2lf, c_white, 1); // L
