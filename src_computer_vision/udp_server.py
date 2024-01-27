@@ -20,8 +20,6 @@ computer_vision = ComputerVision()
 
 # Listen for incoming datagrams
 while(True):
-        
-        
         data = json.dumps(computer_vision.run())
 
         print(f"sending {data}")
