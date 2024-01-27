@@ -25,7 +25,7 @@
         {"name":"g_StripesAmplitude","type":0,"value":"59",},
         {"name":"g_StripesColours","type":0,"value":"4",},
         {"name":"g_StripesSharpness","type":0,"value":"0.5",},
-        {"name":"g_StripesPalette","type":2,"value":"sprLobbyLights",},
+        {"name":"g_StripesPalette","type":2,"value":"sprLogoOverlay",},
       ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Gradient2","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_269389B4","animationSpeed":1.0,"colour":3388997631,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":180.0,"scaleX":0.7,"scaleY":0.20000002,"spriteId":{"name":"StageGrad","path":"sprites/StageGrad/StageGrad.yy",},"x":1344.0,"y":768.0,},
