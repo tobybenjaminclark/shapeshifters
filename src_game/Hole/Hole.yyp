@@ -33,7 +33,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"oTCPClient","path":"objects/oTCPClient/oTCPClient.yy",},},
@@ -55,12 +55,14 @@
     {"id":{"name":"sprLobbyLights","path":"sprites/sprLobbyLights/sprLobbyLights.yy",},},
     {"id":{"name":"sprForearm","path":"sprites/sprForearm/sprForearm.yy",},},
     {"id":{"name":"sprLobbyPallette","path":"sprites/sprLobbyPallette/sprLobbyPallette.yy",},},
+    {"id":{"name":"send_message","path":"scripts/send_message/send_message.yy",},},
     {"id":{"name":"sprLogo","path":"sprites/sprLogo/sprLogo.yy",},},
     {"id":{"name":"sprStage","path":"sprites/sprStage/sprStage.yy",},},
     {"id":{"name":"sprPresenter","path":"sprites/sprPresenter/sprPresenter.yy",},},
     {"id":{"name":"sprHead","path":"sprites/sprHead/sprHead.yy",},},
     {"id":{"name":"sprBody","path":"sprites/sprBody/sprBody.yy",},},
     {"id":{"name":"sprThigh","path":"sprites/sprThigh/sprThigh.yy",},},
+    {"id":{"name":"receive_message","path":"scripts/receive_message/receive_message.yy",},},
     {"id":{"name":"sprPodium","path":"sprites/sprPodium/sprPodium.yy",},},
     {"id":{"name":"oPresenter","path":"objects/oPresenter/oPresenter.yy",},},
     {"id":{"name":"rmLobby","path":"rooms/rmLobby/rmLobby.yy",},},
