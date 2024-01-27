@@ -1,6 +1,19 @@
 
 #macro SCALING_FACTOR 0.5
 
+global.PlayerPose =
+{
+	s2h: -1,
+	s2re: -1,
+	re2rw: -1,
+	s2le: -1,
+	le2lw: -1,
+	h2rk: -1,
+	rk2rf: -1,
+	h2lk: -1,
+	lk2lf: -1
+}
+
 global.TPOSE =
 {
 	s2h: 90,
