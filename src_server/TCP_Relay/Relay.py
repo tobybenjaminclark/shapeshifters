@@ -21,7 +21,7 @@ def handle_client2(client1_socket, client2_socket):
 # Main function to start the server
 def main():
   # Server settings
-  host = 'localhost'
+  host = '0.0.0.0'
   port1 = 12345  # Port for client 1
   port2 = 12346  # Port for client 2
 
