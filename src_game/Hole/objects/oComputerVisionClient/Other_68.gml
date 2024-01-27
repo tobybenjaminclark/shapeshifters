@@ -74,6 +74,12 @@ if variable_struct_exists(jsonData, "s2h")
 {
 	if(jsonData.s2h != -1) global.PlayerPose.s2h = jsonData.s2h;
 }
+
+// Check if the struct has id variable
+if variable_struct_exists(jsonData, "s2w")
+{
+	if(jsonData.s2h != -1) global.PlayerPose.s2w = jsonData.s2w;
+}
         
 
 buffer_seek(send_buffer, buffer_seek_start,0);
