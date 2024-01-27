@@ -17,12 +17,12 @@ draw_sprite_ext(sprUpperArm, 0, x - (100), y - (50), SCALING_FACTOR, SCALING_FAC
 draw_sprite_ext(sprUpperArm, 0, x + (100), y - (50), SCALING_FACTOR, SCALING_FACTOR, pose.s2re, c_white, 1); // R
 
 // Right Wrist Calculations
-rw_x = (x + 100) + lengthdir_x(140, pose.re2rw); // R X
-rw_y = (y - 50) + lengthdir_y(140, pose.re2rw); // R Y
+rw_x = (x + 100) + lengthdir_x(80, pose.re2rw); // R X
+rw_y = (y - 50) + lengthdir_y(80, pose.re2rw); // R Y
 
 // Left Wrist Calculations
-lw_x = (x - 100) + lengthdir_x(140, pose.le2lw); // L X
-lw_y = (y - 50) + lengthdir_y(140, pose.le2lw); // L Y
+lw_x = (x - 100) + lengthdir_x(80, pose.le2lw); // L X
+lw_y = (y - 50) + lengthdir_y(80, pose.le2lw); // L Y
 
 // forearms
 draw_sprite_ext(sprForearm, 0, lw_x, lw_y, SCALING_FACTOR, SCALING_FACTOR, pose.le2lw, c_white, 1); // L
