@@ -176,6 +176,8 @@ class ComputerVision():
         shoulder_to_hip = self.calculate_hip_to_shoulder(keypoints)
         angle_dict["s2w"] = shoulder_to_hip
 
+        angle_dict["cv"] = True
+
         
 
         return angle_dict
