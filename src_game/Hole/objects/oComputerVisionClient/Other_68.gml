@@ -80,6 +80,9 @@ if variable_struct_exists(jsonData, "s2w")
 {
 	if(jsonData.s2h != -1) global.PlayerPose.s2w = jsonData.s2w;
 }
+
+// this needs to send pose data to the azure server
+
         
 if (global.client_socket != -1)
 {
