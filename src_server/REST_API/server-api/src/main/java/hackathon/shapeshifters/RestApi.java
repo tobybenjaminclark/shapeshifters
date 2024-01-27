@@ -63,7 +63,7 @@ public class RestApi {
     thread.start(); // Start the thread
 
     JsonObjectBuilder builder = Json.createObjectBuilder()
-          .add("recieved", true);
+          .add("Recieved", true);
 
     JsonObject json = builder.build();
 
@@ -76,9 +76,9 @@ public class RestApi {
   public String getReady() {
     JsonObjectBuilder builder = Json.createObjectBuilder();
     if (readyA && readyB) {
-      builder.add("ready", true);
+      builder.add("Ready", true);
     } else {
-      builder.add("ready", false);
+      builder.add("Ready", false);
     }
     JsonObject json = builder.build();
     return json.toString();
@@ -113,7 +113,7 @@ public class RestApi {
     thread.start(); // Start the thread
 
     JsonObjectBuilder builder = Json.createObjectBuilder()
-          .add("recieved", true);
+          .add("Recieved", true);
 
     JsonObject json = builder.build();
 
@@ -127,13 +127,13 @@ public class RestApi {
     JsonObjectBuilder builder = Json.createObjectBuilder();
     if (accuracyA > 0 && accuracyB > 0) {
       if (accuracyA > accuracyB) {
-        builder.add("winner", "A");
+        builder.add("Winner", "A");
       } else {
-        builder.add("winner", "B");
+        builder.add("Winner", "B");
       }
       
     } else {
-      builder.add("winner", "None");
+      builder.add("Winner", "None");
     }
     JsonObject json = builder.build();
     return json.toString();
