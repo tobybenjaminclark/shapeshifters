@@ -84,6 +84,14 @@ if variable_struct_exists(jsonData, "s2w")
 // this needs to send pose data to the azure server
 
         
+if (global.client_socket != -1)
+{
+	send_tcp_message(jsonData);
+}
+else
+{
+	show_message("couldn't sent message");
+}
 
 buffer_seek(send_buffer, buffer_seek_start,0);
 buffer_write(send_buffer, buffer_string, "received");

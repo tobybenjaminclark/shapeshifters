@@ -3,7 +3,7 @@
 
 for(var c = 0; c < global.PlayerScore; c++)
 {
-	draw_sprite_ext(sprScore, 0, x, y - (c * sprite_get_height(sprScore)), 0.3, 0.3, 0, c_white, 1);
+	draw_sprite_ext(sprScore, 0, x, y - (c * (sprite_get_height(sprScore) * 0.2)), 0.2, 0.2, 0, c_white, 1);
 }
 
 
