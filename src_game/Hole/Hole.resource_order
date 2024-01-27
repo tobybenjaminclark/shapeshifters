@@ -18,6 +18,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"oTCPClient","order":3,"path":"objects/oTCPClient/oTCPClient.yy",},
     {"name":"sprLogoOverlay","order":2,"path":"sprites/sprLogoOverlay/sprLogoOverlay.yy",},
     {"name":"StageGrad","order":1,"path":"sprites/StageGrad/StageGrad.yy",},
     {"name":"sprUpperArm","order":2,"path":"sprites/sprUpperArm/sprUpperArm.yy",},

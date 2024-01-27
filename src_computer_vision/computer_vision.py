@@ -135,18 +135,28 @@ class ComputerVision():
         # do it from shoulder midpoint
         # do it from the hip midpoint
 
-
-        left_knee_to_left_ankle = self.calculate_angle(keypoints, "left_knee", "left_ankle")
-        angle_dict["lk2lf"] = left_knee_to_left_ankle
-
-        right_knee_to_right_ankle = self.calculate_angle(keypoints, "right_knee", "right_ankle")
-        angle_dict["rk2rf"] = right_knee_to_right_ankle
-
         left_hip_to_left_knee = self.calculate_angle(keypoints, "left_hip", "left_knee")
         angle_dict["h2lk"] = left_hip_to_left_knee
 
         right_hip_to_right_knee = self.calculate_angle(keypoints, "right_hip", "right_knee")
         angle_dict["h2rk"] = right_hip_to_right_knee
+
+
+        left_knee_to_left_ankle = self.calculate_angle(keypoints, "left_knee", "left_ankle")
+
+        if(left_knee_to_left_ankle == -1):
+            left_knee_to_left_ankle = left_hip_to_left_knee
+
+        angle_dict["lk2lf"] = left_knee_to_left_ankle
+
+        right_knee_to_right_ankle = self.calculate_angle(keypoints, "right_knee", "right_ankle")
+
+        if(right_knee_to_right_ankle == -1):
+            right_knee_to_right_ankle = right_hip_to_right_knee
+
+        angle_dict["rk2rf"] = right_knee_to_right_ankle
+
+        
 
         left_shoulder_to_left_elbow = self.calculate_angle(keypoints, "left_shoulder", "left_elbow")
         angle_dict["s2le"] = left_shoulder_to_left_elbow
@@ -163,6 +173,10 @@ class ComputerVision():
         shoulder_to_head = self.calculate_shoulder_to_head(keypoints)
         angle_dict["s2h"] = shoulder_to_head
 
+        shoulder_to_hip = self.calculate_hip_to_shoulder(keypoints)
+        angle_dict["s2w"] = shoulder_to_hip
+
+        
 
         return angle_dict
 
@@ -236,7 +250,33 @@ class ComputerVision():
 
         return angle
 
+    def calculate_hip_to_shoulder(self, keypoints):
+        left_shoulder_y, left_shoulder_x, left_shoulder_conf = keypoints[KEYPOINT_DICT["left_shoulder"]]
+        right_shoulder_y, right_shoulder_x, right_shoulder_conf = keypoints[KEYPOINT_DICT["right_shoulder"]]
+
+        if(left_shoulder_conf < CONFIDENCE_THRESHOLD or right_shoulder_conf < CONFIDENCE_THRESHOLD):
+            return -1
         
+        shoulder_x_midpoint = (left_shoulder_x + right_shoulder_x) / 2
+        shoulder_y_midpoint = (left_shoulder_y + right_shoulder_y) / 2
+
+        left_hip_y, left_hip_x, left_hip_conf = keypoints[KEYPOINT_DICT["left_hip"]]
+        right_hip_y, right_hip_x, right_hip_conf = keypoints[KEYPOINT_DICT["right_hip"]]
+
+        if(left_hip_conf < CONFIDENCE_THRESHOLD or right_hip_conf < CONFIDENCE_THRESHOLD):
+            return -1
+        
+        hip_x_midpoint = (left_hip_x + right_hip_x) / 2
+        hip_y_midpoint = (left_hip_y + right_hip_y) / 2
+
+        angle = math.degrees(math.atan2(hip_y_midpoint - shoulder_y_midpoint, hip_x_midpoint - shoulder_x_midpoint)) + 180
+
+        print(f"shoulder to hip: {angle}")
+
+        return angle
+
+
+
 
 
 
