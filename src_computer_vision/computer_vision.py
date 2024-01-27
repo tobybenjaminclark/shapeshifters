@@ -138,18 +138,28 @@ class ComputerVision():
         # do it from shoulder midpoint
         # do it from the hip midpoint
 
-
-        left_knee_to_left_ankle = self.calculate_angle(keypoints, "left_knee", "left_ankle")
-        angle_dict["lk2lf"] = left_knee_to_left_ankle
-
-        right_knee_to_right_ankle = self.calculate_angle(keypoints, "right_knee", "right_ankle")
-        angle_dict["rk2rf"] = right_knee_to_right_ankle
-
         left_hip_to_left_knee = self.calculate_angle(keypoints, "left_hip", "left_knee")
         angle_dict["h2lk"] = left_hip_to_left_knee
 
         right_hip_to_right_knee = self.calculate_angle(keypoints, "right_hip", "right_knee")
         angle_dict["h2rk"] = right_hip_to_right_knee
+
+
+        left_knee_to_left_ankle = self.calculate_angle(keypoints, "left_knee", "left_ankle")
+
+        if(left_knee_to_left_ankle == -1):
+            left_knee_to_left_ankle = left_hip_to_left_knee
+
+        angle_dict["lk2lf"] = left_knee_to_left_ankle
+
+        right_knee_to_right_ankle = self.calculate_angle(keypoints, "right_knee", "right_ankle")
+
+        if(right_knee_to_right_ankle == -1):
+            right_knee_to_right_ankle = right_hip_to_right_knee
+
+        angle_dict["rk2rf"] = right_knee_to_right_ankle
+
+        
 
         left_shoulder_to_left_elbow = self.calculate_angle(keypoints, "left_shoulder", "left_elbow")
         angle_dict["s2le"] = left_shoulder_to_left_elbow
@@ -169,6 +179,7 @@ class ComputerVision():
         shoulder_to_hip = self.calculate_hip_to_shoulder(keypoints)
         angle_dict["s2w"] = shoulder_to_hip
 
+        
 
         return angle_dict
 
