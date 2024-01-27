@@ -21,7 +21,6 @@ computer_vision = ComputerVision()
 # Listen for incoming datagrams
 while(True):
         
-        print("finding data")
         
         data = json.dumps(computer_vision.run())
 
