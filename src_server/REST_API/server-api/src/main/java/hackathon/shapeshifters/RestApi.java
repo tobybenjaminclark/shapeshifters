@@ -1,5 +1,6 @@
 package hackathon.shapeshifters;
 
+import java.util.Collections;
 import java.util.Map;
 import javax.json.Json;
 import javax.json.JsonObject;
@@ -32,8 +33,10 @@ public class RestApi {
   public static void main(String[] args) {
     readyA = false;
     readyB = false;
-    System.setProperty("server.address", "0.0.0.0");
+    SpringApplication app = new SpringApplication(RestApi.class);
+    app.setDefaultProperties(Collections.singletonMap("server.port", "8083"));
     SpringApplication.run(RestApi.class, args);
+    app.setDefaultProperties(Collections.singletonMap("server.address", "0.0.0.0"));
   }
 
   @PostMapping(
