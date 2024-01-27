@@ -44,6 +44,7 @@
     {"id":{"name":"sprThem","path":"sprites/sprThem/sprThem.yy",},},
     {"id":{"name":"sprUpperArm","path":"sprites/sprUpperArm/sprUpperArm.yy",},},
     {"id":{"name":"rmMatchPose","path":"rooms/rmMatchPose/rmMatchPose.yy",},},
+    {"id":{"name":"sprPodiumPallette","path":"sprites/sprPodiumPallette/sprPodiumPallette.yy",},},
     {"id":{"name":"sprFoot","path":"sprites/sprFoot/sprFoot.yy",},},
     {"id":{"name":"oStart","path":"objects/oStart/oStart.yy",},},
     {"id":{"name":"oPose","path":"objects/oPose/oPose.yy",},},
@@ -59,6 +60,7 @@
     {"id":{"name":"sprHead","path":"sprites/sprHead/sprHead.yy",},},
     {"id":{"name":"sprBody","path":"sprites/sprBody/sprBody.yy",},},
     {"id":{"name":"sprThigh","path":"sprites/sprThigh/sprThigh.yy",},},
+    {"id":{"name":"sprPodium","path":"sprites/sprPodium/sprPodium.yy",},},
     {"id":{"name":"rmLobby","path":"rooms/rmLobby/rmLobby.yy",},},
   ],
   "RoomOrderNodes": [

@@ -26,6 +26,7 @@
     {"name":"sprThem","order":3,"path":"sprites/sprThem/sprThem.yy",},
     {"name":"sprUpperArm","order":2,"path":"sprites/sprUpperArm/sprUpperArm.yy",},
     {"name":"rmMatchPose","order":2,"path":"rooms/rmMatchPose/rmMatchPose.yy",},
+    {"name":"sprPodiumPallette","order":8,"path":"sprites/sprPodiumPallette/sprPodiumPallette.yy",},
     {"name":"sprFoot","order":5,"path":"sprites/sprFoot/sprFoot.yy",},
     {"name":"oPose","order":1,"path":"objects/oPose/oPose.yy",},
     {"name":"oComputerVisionClient","order":2,"path":"objects/oComputerVisionClient/oComputerVisionClient.yy",},
@@ -36,5 +37,6 @@
     {"name":"sprStage","order":7,"path":"sprites/sprStage/sprStage.yy",},
     {"name":"sprHead","order":1,"path":"sprites/sprHead/sprHead.yy",},
     {"name":"sprThigh","order":4,"path":"sprites/sprThigh/sprThigh.yy",},
+    {"name":"sprPodium","order":4,"path":"sprites/sprPodium/sprPodium.yy",},
   ],
 }
