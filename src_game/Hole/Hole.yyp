@@ -58,11 +58,13 @@
     {"id":{"name":"send_message","path":"scripts/send_message/send_message.yy",},},
     {"id":{"name":"sprLogo","path":"sprites/sprLogo/sprLogo.yy",},},
     {"id":{"name":"sprStage","path":"sprites/sprStage/sprStage.yy",},},
+    {"id":{"name":"sprPresenter","path":"sprites/sprPresenter/sprPresenter.yy",},},
     {"id":{"name":"sprHead","path":"sprites/sprHead/sprHead.yy",},},
     {"id":{"name":"sprBody","path":"sprites/sprBody/sprBody.yy",},},
     {"id":{"name":"sprThigh","path":"sprites/sprThigh/sprThigh.yy",},},
     {"id":{"name":"Script3","path":"scripts/Script3/Script3.yy",},},
     {"id":{"name":"sprPodium","path":"sprites/sprPodium/sprPodium.yy",},},
+    {"id":{"name":"oPresenter","path":"objects/oPresenter/oPresenter.yy",},},
     {"id":{"name":"rmLobby","path":"rooms/rmLobby/rmLobby.yy",},},
   ],
   "RoomOrderNodes": [
