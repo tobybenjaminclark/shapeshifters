@@ -35,19 +35,19 @@ def handle_client(client_socket):
     if data["readyB"]:
       B_ready = True
       
-    if data["A_1_Accuracy"] > 0:
-      A_1_accuracy = data["A_1_Accuracy"]
-    if data["A_2_Accuracy"] > 0:
-      A_1_accuracy = data["A_2_Accuracy"]
-    if data["A_3_Accuracy"] > 0:
-      A_1_accuracy = data["A_3_Accuracy"]
+    if data["A_1_accuracy"] > 0:
+      A_1_accuracy = data["A_1_accuracy"]
+    if data["A_2_accuracy"] > 0:
+      A_1_accuracy = data["A_2_accuracy"]
+    if data["A_3_accuracy"] > 0:
+      A_1_accuracy = data["A_3_accuracy"]
       
-    if data["B_1_Accuracy"] > 0:
-      A_1_accuracy = data["B_1_Accuracy"]
-    if data["B_2_Accuracy"] > 0:
-      A_1_accuracy = data["B_2_Accuracy"]
-    if data["B_3_Accuracy"] > 0:
-      A_1_accuracy = data["B_3_Accuracy"] 
+    if data["B_1_accuracy"] > 0:
+      A_1_accuracy = data["B_1_accuracy"]
+    if data["B_2_accuracy"] > 0:
+      A_1_accuracy = data["B_2_accuracy"]
+    if data["B_3_accuracy"] > 0:
+      A_1_accuracy = data["B_3_accuracy"] 
       
 def update_clients(client1_socket, client2_socket):
   global A_ready
@@ -64,12 +64,12 @@ def update_clients(client1_socket, client2_socket):
     data = {
       "readyA": A_ready,
       "readyA": B_ready,
-      "A_1_Accuracy": A_1_accuracy,
-      "A_2_Accuracy": A_2_accuracy,
-      "A_3_Accuracy": A_3_accuracy,
-      "B_1_Accuracy": B_1_accuracy,
-      "B_2_Accuracy": B_2_accuracy,
-      "B_3_Accuracy": B_3_accuracy
+      "A_1_accuracy": A_1_accuracy,
+      "A_2_accuracy": A_2_accuracy,
+      "A_3_accuracy": A_3_accuracy,
+      "B_1_accuracy": B_1_accuracy,
+      "B_2_accuracy": B_2_accuracy,
+      "B_3_accuracy": B_3_accuracy
     }
     
     json_string = json.dumps(data)
