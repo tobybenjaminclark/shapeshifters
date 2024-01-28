@@ -31,24 +31,24 @@ def handle_client(client_socket):
     print("Recieved JSON: " + json_string)
     data = json.loads(json_string)
     
-    if data["a_ready"]:
+    if data["readya"]:
        A_ready = True
-    if data["b_ready"]:
+    if data["readyb"]:
       B_ready = True
       
-    if data["A_1_accuracy"] > 0:
-      A_1_accuracy = data["A_1_accuracy"]
-    if data["A_2_accuracy"] > 0:
-      A_1_accuracy = data["A_2_accuracy"]
-    if data["A_3_accuracy"] > 0:
-      A_1_accuracy = data["A_3_accuracy"]
+    if data["a_1_accuracy"] > 0:
+      A_1_accuracy = data["b_1_accuracy"]
+    if data["a_2_accuracy"] > 0:
+      A_1_accuracy = data["b_2_accuracy"]
+    if data["a_3_accuracy"] > 0:
+      A_1_accuracy = data["b_3_accuracy"]
       
-    if data["B_1_accuracy"] > 0:
-      A_1_accuracy = data["B_1_accuracy"]
-    if data["B_2_accuracy"] > 0:
-      A_1_accuracy = data["B_2_accuracy"]
-    if data["B_3_accuracy"] > 0:
-      A_1_accuracy = data["B_3_accuracy"] 
+    if data["b_1_accuracy"] > 0:
+      A_1_accuracy = data["b_1_accuracy"]
+    if data["b_2_accuracy"] > 0:
+      A_1_accuracy = data["b_2_accuracy"]
+    if data["b_3_accuracy"] > 0:
+      A_1_accuracy = data["b_3_accuracy"] 
       
 def update_clients(client1_socket, client2_socket):
   global A_ready
@@ -63,14 +63,14 @@ def update_clients(client1_socket, client2_socket):
   while True:
     time.sleep(0.01)
     data = {
-      "a_ready": A_ready,
-      "b_ready": B_ready,
-      "A_1_accuracy": A_1_accuracy,
-      "A_2_accuracy": A_2_accuracy,
-      "A_3_accuracy": A_3_accuracy,
-      "B_1_accuracy": B_1_accuracy,
-      "B_2_accuracy": B_2_accuracy,
-      "B_3_accuracy": B_3_accuracy
+      "readya": A_ready,
+      "readyb": B_ready,
+      "a_1_accuracy": A_1_accuracy,
+      "a_2_accuracy": A_2_accuracy,
+      "a_3_accuracy": A_3_accuracy,
+      "b_1_accuracy": B_1_accuracy,
+      "b_2_accuracy": B_2_accuracy,
+      "b_3_accuracy": B_3_accuracy
     }
     
     json_string = json.dumps(data)
@@ -78,9 +78,6 @@ def update_clients(client1_socket, client2_socket):
     client1_socket.sendall(json_string.encode())
     client2_socket.sendall(json_string.encode())
   
-    if A_ready and B_ready:
-      A_ready = False
-      B_ready = False
     if A_3_accuracy > 0 and B_3_accuracy > 0:
       A_1_accuracy = -1.0
       A_2_accuracy = -1.0
