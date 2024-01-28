@@ -60,7 +60,7 @@ class ComputerVision():
         self.model.allocate_tensors()
 
         # Get video input from primary camera
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(1)
 
     def run(self):
         # Capture frame-by-frame
