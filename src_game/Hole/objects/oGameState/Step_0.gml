@@ -29,7 +29,7 @@ switch(state)
 		var elapsedTime = current_time - start_time;
 		draw_text(x, y, elapsedTime);
 		// Calculate current accuracy
-		var player_1_accuracy = calc_accuracy(global.PlayerPose, global.TPOSE, 15);
+		var player_1_accuracy = calc_accuracy(global.PlayerPose, global.TPOSE, 5);
 		if(player_1_accuracy > state_1_max_accuracy) state_1_max_accuracy = player_1_accuracy;
 			
 		
@@ -40,7 +40,7 @@ switch(state)
 				global.announcement = "You got an accuracy of " + string(state_1_max_accuracy) + "\nIt's 2017, Hit a dab!";
 				
 				// Award Points
-				global.player_points = round(state_1_max_accuracy / 10);
+				global.player_points1 = round(state_1_max_accuracy / 10);
 				
 				state_1_announcement_shown = true;
 				start_time2 = current_time;
@@ -62,7 +62,7 @@ switch(state)
 		break;
 	case 2: // Dab Match
 	
-		var player_2_accuracy = calc_accuracy(global.PlayerPose, global.DAB, 15);
+		var player_2_accuracy = calc_accuracy(global.PlayerPose, global.DAB, 5);
 		if(player_2_accuracy > state_2_max_accuracy) state_2_max_accuracy = player_2_accuracy;
 		
 		var elapsedTime = current_time - start_time;
@@ -71,7 +71,7 @@ switch(state)
 		{
 			if(!state_2_announcement_shown)
 			{
-				global.player_points = round(state_2_max_accuracy / 10);
+				global.player_points2 = round(state_2_max_accuracy / 10);
 				global.announcement = "You scored an accuracy of " + string(state_2_max_accuracy) + "\nShow me your best Kung Fu Kick!";
 				state_2_announcement_shown = true;
 				start_time2 = current_time;
@@ -93,7 +93,7 @@ switch(state)
 		break;
 	case 3: // Ninja Match
 	
-		var player_3_accuracy = calc_accuracy(global.PlayerPose, global.NINJA, 15);
+		var player_3_accuracy = calc_accuracy(global.PlayerPose, global.NINJA, 5);
 		if(player_3_accuracy > state_3_max_accuracy) state_3_max_accuracy = player_3_accuracy;
 	
 		var elapsedTime = current_time - start_time;
@@ -102,7 +102,7 @@ switch(state)
 		{
 			if(!state_3_announcement_shown)
 			{
-				global.player_points = round(state_3_max_accuracy / 10);
+				global.player_points3 = round(state_3_max_accuracy / 10);
 				global.announcement = "You scored an accuracy of " + string(state_3_max_accuracy) + "\nChallenge your opponent, pull a pose\n they have to replicate";
 				state_3_announcement_shown = true;
 				start_time2 = current_time;
@@ -176,11 +176,3 @@ switch(state)
 		}
 		break;
 }
-
-
-
-
-
-
-
-
