@@ -118,8 +118,7 @@ switch(state)
 		{
 			if(!state_3_announcement_shown)
 			{
-				
-				global.announcement = "You scored an accuracy of " + string(state_3_max_accuracy) + "\nChallenge your opponent, pull a pose\n they have to replicate";
+				global.announcement = "Who is going to win?";
 				state_3_announcement_shown = true;
 				start_time2 = current_time;
 				global.queued_room = rmAnnouncement;	
@@ -129,13 +128,24 @@ switch(state)
 				// Has enough time passed?
 				var elapsedTime = current_time - start_time2;
 				draw_text(x, y, elapsedTime);
-				if(elapsedTime >= 4000) 
+				if(elapsedTime >= 4000)
 				{
-					global.player_points3 = round(state_3_max_accuracy / 10);
 					
-					global.queued_room = rmMatchPose;
 					start_time = current_time;
-					state = 4;
+					
+					var opp_score = state_3_max_accuracy_opp + state_2_max_accuracy_opp + state_1_max_accuracy_opp;
+					var plyr_score = state_3_max_accuracy + state_2_max_accuracy + state_1_max_accuracy;
+					
+					if(opp_score > plyr_score)
+					{
+						global.queued_room = rmLose;
+						instance_destroy(self);
+					}
+					else
+					{
+						instance_destroy(self);
+						global.queued_room = rmWinner;
+					}
 				}
 			}
 		}
