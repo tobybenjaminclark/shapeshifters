@@ -42,8 +42,6 @@ function send_json_data()
 	
 	if(global.sending_data == false) return;
 	
-	global.jsonData.a_1_accuracy = 256;
-	
     json_data = json_stringify(global.jsonData);
 	show_debug_message(json_data);
     var t_buffer = buffer_create(buffer_string, buffer_grow, 1);

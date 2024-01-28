@@ -13,7 +13,7 @@
     {"name":"inst_603B4B49","path":"rooms/rmMatchPose/rmMatchPose.yy",},
     {"name":"inst_4F2E4203","path":"rooms/rmMatchPose/rmMatchPose.yy",},
     {"name":"inst_27ED0BC3","path":"rooms/rmMatchPose/rmMatchPose.yy",},
-    {"name":"inst_287671ED","path":"rooms/rmMatchPose/rmMatchPose.yy",},
+    {"name":"inst_77CDDF4","path":"rooms/rmMatchPose/rmMatchPose.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -94,7 +94,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Presenter","depth":600,"effectEnabled":true,"effectType":"_filter_stripes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7A34AFF7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oPresenter","path":"objects/oPresenter/oPresenter.yy",},"properties":[],"rotation":7.9276123,"scaleX":0.3225,"scaleY":0.3225,"x":524.8274,"y":89.30412,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27ED0BC3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oScore","path":"objects/oScore/oScore.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":522.0,"y":659.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_287671ED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oScore","path":"objects/oScore/oScore.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":777.0,"y":659.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_77CDDF4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oOpponentScore","path":"objects/oOpponentScore/oOpponentScore.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":777.0,"y":659.0,},
       ],"layers":[],"properties":[
         {"name":"g_StripesWidth","type":0,"value":"30",},
         {"name":"g_StripesDirection","type":0,"value":"59",},
