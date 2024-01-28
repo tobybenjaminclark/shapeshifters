@@ -78,9 +78,6 @@ def update_clients(client1_socket, client2_socket):
     client1_socket.sendall(json_string.encode())
     client2_socket.sendall(json_string.encode())
   
-    if A_ready and B_ready:
-      A_ready = False
-      B_ready = False
     if A_3_accuracy > 0 and B_3_accuracy > 0:
       A_1_accuracy = -1.0
       A_2_accuracy = -1.0
