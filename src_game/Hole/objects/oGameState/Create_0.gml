@@ -1,4 +1,4 @@
-/// @description Insert description here
+		/// @description Insert description here
 // You can write your code in this editor
 
 // State 0: Not Started Yet
@@ -30,3 +30,7 @@ state_5_announcement_shown = false;
 state_1_max_accuracy = 0;
 state_2_max_accuracy = 0;
 state_3_max_accuracy = 0;
+
+state_1_max_accuracy_opp = 0;
+state_2_max_accuracy_opp = 0;
+state_3_max_accuracy_opp = 0;

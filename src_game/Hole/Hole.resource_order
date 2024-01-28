@@ -44,6 +44,7 @@
     {"name":"calculate_accuracy","order":5,"path":"scripts/calculate_accuracy/calculate_accuracy.yy",},
     {"name":"testObj","order":10,"path":"objects/testObj/testObj.yy",},
     {"name":"oPose","order":1,"path":"objects/oPose/oPose.yy",},
+    {"name":"oPoseSta","order":16,"path":"objects/oPoseSta/oPoseSta.yy",},
     {"name":"oComputerVisionClient","order":2,"path":"objects/oComputerVisionClient/oComputerVisionClient.yy",},
     {"name":"sprBegin","order":1,"path":"sprites/sprBegin/sprBegin.yy",},
     {"name":"send_json_data","order":6,"path":"scripts/send_json_data/send_json_data.yy",},
