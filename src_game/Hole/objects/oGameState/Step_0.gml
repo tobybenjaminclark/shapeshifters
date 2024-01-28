@@ -6,6 +6,9 @@ switch(state)
 	case 0: // Not started yet
 		if(!state_0_announcement_shown)
 		{
+			global.highlight_pose = global.TPOSE;
+			global.jsonData.readya = false;
+			global.jsonData.readyb = false;
 			global.announcement = "Gamers Rise Up! Do your best T-Pose.";
 			state_0_announcement_shown = true;
 			start_time = current_time;
@@ -16,7 +19,7 @@ switch(state)
 			// Has enough time passed?
 			var elapsedTime = current_time - start_time;
 			draw_text(x, y, elapsedTime);
-			if(elapsedTime >= 2000)
+			if(elapsedTime >= 6000)
 			{
 				global.queued_room = rmMatchPose;
 				start_time = current_time;
@@ -45,7 +48,8 @@ switch(state)
 		{
 			if(!state_1_announcement_shown)
 			{
-				global.announcement = "You got an accuracy of " + string(state_1_max_accuracy) + "\nIt's 2017, Hit a dab!";
+				global.highlight_pose = global.DAB;
+				global.announcement = "You got an accuracy of " + string(state_1_max_accuracy) + "\nIt's 2017, Hit a usain bolt!";
 				
 				// Award Points
 				global.player_points1 = round(state_1_max_accuracy / 10);
@@ -84,6 +88,7 @@ switch(state)
 			if(!state_2_announcement_shown)
 			{
 				global.player_points2 = round(state_2_max_accuracy / 10);
+				global.highlight_pose = global.NINJA;
 				global.announcement = "You scored an accuracy of " + string(state_2_max_accuracy) + "\nShow me your best Kung Fu Kick!";
 				state_2_announcement_shown = true;
 				start_time2 = current_time;

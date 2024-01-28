@@ -64,6 +64,7 @@
     {"id":{"name":"calculate_accuracy","path":"scripts/calculate_accuracy/calculate_accuracy.yy",},},
     {"id":{"name":"testObj","path":"objects/testObj/testObj.yy",},},
     {"id":{"name":"oPose","path":"objects/oPose/oPose.yy",},},
+    {"id":{"name":"oPoseSta","path":"objects/oPoseSta/oPoseSta.yy",},},
     {"id":{"name":"oComputerVisionClient","path":"objects/oComputerVisionClient/oComputerVisionClient.yy",},},
     {"id":{"name":"Stagefloor","path":"sprites/Stagefloor/Stagefloor.yy",},},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},

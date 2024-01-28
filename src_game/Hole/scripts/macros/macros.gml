@@ -4,6 +4,7 @@
 global.sending_data = false;
 
 global.data_map = ds_map_create();
+global.highlight_pose = global.TPOSE;
 
 global.player_id = "b";
 global.opponent_id = "a";
@@ -20,6 +21,7 @@ global.jsonData.b_1_accuracy = -1;
 global.jsonData.b_2_accuracy = -1;
 global.jsonData.b_3_accuracy = -1;
 
+global.high
 
 global.queued_room = -1;
 
