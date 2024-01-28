@@ -40,13 +40,16 @@ function send_json_data()
 	}
 	*/
 	
-	// global.jsonData.a_1_accuracy = -1;
+	if(global.sending_data == false) return;
+	
+	global.jsonData.a_1_accuracy = 256;
+	
     json_data = json_stringify(global.jsonData);
 	show_debug_message(json_data);
-    
-    var t_buffer = buffer_create(256, buffer_grow, 1);
+    var t_buffer = buffer_create(buffer_string, buffer_grow, 1);
     buffer_seek(t_buffer, buffer_seek_start, 0);
     buffer_write(t_buffer , buffer_string, json_data);
-    network_send_packet(global.data_socket, t_buffer, buffer_tell(t_buffer));
+    network_send_raw(global.data_socket, t_buffer, buffer_tell(t_buffer));
     buffer_delete(t_buffer);
+	
 }

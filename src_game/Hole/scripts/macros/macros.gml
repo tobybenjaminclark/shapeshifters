@@ -1,6 +1,8 @@
 
 #macro SCALING_FACTOR 0.5
 
+global.sending_data = false;
+
 global.data_map = ds_map_create();
 
 global.player_id = "b";
