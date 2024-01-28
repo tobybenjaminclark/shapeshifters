@@ -31,9 +31,9 @@ def handle_client(client_socket):
     print("Recieved JSON: " + json_string)
     data = json.loads(json_string)
     
-    if data["readyA"]:
+    if data["a_ready"]:
        A_ready = True
-    if data["readyB"]:
+    if data["b_ready"]:
       B_ready = True
       
     if data["A_1_accuracy"] > 0:
@@ -63,8 +63,8 @@ def update_clients(client1_socket, client2_socket):
   while True:
     time.sleep(0.01)
     data = {
-      "readyA": A_ready,
-      "readyB": B_ready,
+      "a_ready": A_ready,
+      "b_ready": B_ready,
       "A_1_accuracy": A_1_accuracy,
       "A_2_accuracy": A_2_accuracy,
       "A_3_accuracy": A_3_accuracy,
