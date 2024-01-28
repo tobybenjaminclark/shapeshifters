@@ -5,13 +5,13 @@ if(global.player_ready == false)
 {
 	if(player == 1)
 	{
-		global.player_id = "A";
-		global.opponent_id = "B";
+		global.player_id = "a";
+		global.opponent_id = "b";
 	}
 	else if(player == 2)
 	{
-		global.player_id = "B";
-		global.opponent_id = "A";
+		global.player_id = "b";
+		global.opponent_id = "a";
 	}
 
 	global.player_ready = true;

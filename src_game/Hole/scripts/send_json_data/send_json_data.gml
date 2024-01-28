@@ -30,7 +30,7 @@ function send_json_data()
     ds_map_add(global.data_map, opponent_3_accuracy_label, global.opponent_3_accuracy);
     
     json_data = json_encode(global.data_map);
- 
+	show_debug_message(json_data);
     
     var t_buffer = buffer_create(256, buffer_grow, 1);
     buffer_seek(t_buffer, buffer_seek_start, 0);

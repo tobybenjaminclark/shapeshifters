@@ -3,9 +3,9 @@
 
 global.data_map = ds_map_create();
 
-global.player_id = "A";
-global.opponent_id = "B";
-global.game_id = 1;
+global.player_id = "";
+global.opponent_id = "";
+global.game_id = -1;
 
 global.player_1_accuracy = -1;
 global.player_2_accuracy = -1;
