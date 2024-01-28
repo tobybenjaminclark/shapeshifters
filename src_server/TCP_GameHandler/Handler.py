@@ -62,14 +62,14 @@ def update_clients(client1_socket, client2_socket):
   while True:
     time.sleep(0.01)
     data = {
-      "A_ready": A_ready,
-      "B_ready": B_ready,
-      "A_1_accuracy": A_1_accuracy,
-      "A_2_accuracy": A_2_accuracy,
-      "A_3_accuracy": A_3_accuracy,
-      "B_1_accuracy": B_1_accuracy,
-      "B_2_accuracy": B_2_accuracy,
-      "B_3_accuracy": B_3_accuracy
+      "readyA": A_ready,
+      "readyA": B_ready,
+      "A_1_Accuracy": A_1_accuracy,
+      "A_2_Accuracy": A_2_accuracy,
+      "A_3_Accuracy": A_3_accuracy,
+      "B_1_Accuracy": B_1_accuracy,
+      "B_2_Accuracy": B_2_accuracy,
+      "B_3_Accuracy": B_3_accuracy
     }
     
     json_string = json.dumps(data)
