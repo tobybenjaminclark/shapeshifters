@@ -15,6 +15,8 @@ B_2_accuracy = -1.0
 B_3_accuracy = -1.0
 
 def threadFuse():
+  global A_ready
+  global B_ready
   time.sleep(15)
   A_ready = "false"
   B_ready = "false"
