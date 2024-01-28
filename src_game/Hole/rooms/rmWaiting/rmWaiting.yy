@@ -12,7 +12,13 @@
   ],
   "isDnd": false,
   "layers": [
-    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Spotlight","depth":0,"effectEnabled":true,"effectType":"_filter_dots","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"ShakeLayer","depth":0,"effectEnabled":true,"effectType":"_filter_twist_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_TwistBlurCenter","type":0,"value":"0.5",},
+        {"name":"g_TwistBlurCenter","type":0,"value":"0.5",},
+        {"name":"g_TwistBlurIntensity","type":0,"value":"0",},
+        {"name":"g_TwistBlurTexture","type":2,"value":"_filter_twist_blur_texture",},
+      ],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Spotlight","depth":100,"effectEnabled":true,"effectType":"_filter_dots","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_DotsScale","type":0,"value":"512",},
         {"name":"g_DotsSize","type":0,"value":"0.4",},
         {"name":"g_DotsSize","type":0,"value":"0.6",},
@@ -30,7 +36,7 @@
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_7E9E7025","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":0.747931,"scaleY":0.74793106,"spriteId":{"name":"sprPlayer2","path":"sprites/sprPlayer2/sprPlayer2.yy",},"x":795.03455,"y":286.22278,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_134AF7A1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":0.7945485,"scaleY":0.7945485,"spriteId":{"name":"sprPlayer1","path":"sprites/sprPlayer1/sprPlayer1.yy",},"x":178.0,"y":311.39728,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_33E3B3E5","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprWhatPlayerAreYou","path":"sprites/sprWhatPlayerAreYou/sprWhatPlayerAreYou.yy",},"x":233.0,"y":137.0,},
-      ],"depth":100,"effectEnabled":true,"effectType":"_filter_stripes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+      ],"depth":200,"effectEnabled":true,"effectType":"_filter_stripes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_StripesWidth","type":0,"value":"64",},
         {"name":"g_StripesDirection","type":0,"value":"226",},
         {"name":"g_StripesOffset","type":0,"value":"0",},
@@ -43,7 +49,7 @@
         {"name":"g_StripesSharpness","type":0,"value":"1.2",},
         {"name":"g_StripesPalette","type":2,"value":"sprLogoOverlay",},
       ],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Start","depth":200,"effectEnabled":true,"effectType":"_filter_stripes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Start","depth":300,"effectEnabled":true,"effectType":"_filter_stripes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6765C34D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oReady","path":"objects/oReady/oReady.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oReady","path":"objects/oReady/oReady.yy",},"propertyId":{"name":"player","path":"objects/oReady/oReady.yy",},"value":"1",},
           ],"rotation":0.0,"scaleX":0.684,"scaleY":0.684,"x":230.0,"y":418.0,},
@@ -63,7 +69,7 @@
         {"name":"g_StripesSharpness","type":0,"value":"0.5",},
         {"name":"g_StripesPalette","type":2,"value":"sprLogoOverlay",},
       ],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Wave","depth":300,"effectEnabled":true,"effectType":"_filter_stripes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Wave","depth":400,"effectEnabled":true,"effectType":"_filter_stripes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_StripesWidth","type":0,"value":"59",},
         {"name":"g_StripesDirection","type":0,"value":"306",},
         {"name":"g_StripesOffset","type":0,"value":"0",},
@@ -76,7 +82,7 @@
         {"name":"g_StripesSharpness","type":0,"value":"0",},
         {"name":"g_StripesPalette","type":2,"value":"sprLobbyPallette",},
       ],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
     "name": "Rooms",

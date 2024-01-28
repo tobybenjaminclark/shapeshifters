@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-room_goto(rmWaiting);
+global.queued_room = rmWaiting;
 
 
 

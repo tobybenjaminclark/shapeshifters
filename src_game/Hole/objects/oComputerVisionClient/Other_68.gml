@@ -27,3 +27,104 @@ if(variable_struct_exists(jsonData, "cv"))
             break
     }
 }
+else
+{
+	// data json
+	// parse the data
+	
+	if(variable_struct_exists(jsonData, "a_1_accuracy"))
+	{
+		if(global.player_id == "a")
+		{
+			global.player_1_accuracy = jsonData.a_1_accuracy;
+		}
+		else
+		{
+			global.opponent_1_accuracy = jsonData.a_1_accuracy;
+		}
+	}
+	
+	if(variable_struct_exists(jsonData, "a_2_accuracy"))
+	{
+		if(global.player_id == "a")
+		{
+			global.player_2_accuracy = jsonData.a_2_accuracy;
+		}
+		else
+		{
+			global.opponent_2_accuracy = jsonData.a_2_accuracy;
+		}
+	}
+	
+	if(variable_struct_exists(jsonData, "a_3_accuracy"))
+	{
+		if(global.player_id == "a")
+		{
+			global.player_3_accuracy = jsonData.a_3_accuracy;
+		}
+		else
+		{
+			global.opponent_3_accuracy = jsonData.a_3_accuracy;
+		}
+	}
+	
+	if(variable_struct_exists(jsonData, "b_1_accuracy"))
+	{
+		if(global.player_id == "b")
+		{
+			global.player_1_accuracy = jsonData.b_1_accuracy;
+		}
+		else
+		{
+			global.opponent_1_accuracy = jsonData.b_1_accuracy;
+		}
+	}
+	
+	if(variable_struct_exists(jsonData, "b_2_accuracy"))
+	{
+		if(global.player_id == "b")
+		{
+			global.player_2_accuracy = jsonData.b_2_accuracy;
+		}
+		else
+		{
+			global.opponent_2_accuracy = jsonData.b_2_accuracy;
+		}
+	}
+	
+	if(variable_struct_exists(jsonData, "b_3_accuracy"))
+	{
+		if(global.player_id == "b")
+		{
+			global.player_3_accuracy = jsonData.b_3_accuracy;
+		}
+		else
+		{
+			global.opponent_3_accuracy = jsonData.b_3_accuracy;
+		}
+	}
+	
+	if(variable_struct_exists(jsonData, "a_ready"))
+	{
+		if(global.player_id == "a")
+		{
+			global.player_ready = jsonData.a_ready;
+		}
+		else
+		{
+			global.opponent_ready = jsonData.a_ready;
+		}
+	}
+	
+	if(variable_struct_exists(jsonData, "b_ready"))
+	{
+		if(global.player_id == "b")
+		{
+			global.player_ready = jsonData.b_ready;
+		}
+		else
+		{
+			global.opponent_ready = jsonData.b_ready;
+		}
+	}
+}
