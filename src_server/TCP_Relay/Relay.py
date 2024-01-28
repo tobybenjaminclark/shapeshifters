@@ -5,6 +5,7 @@ import threading
 def handle_client1(client1_socket, client2_socket):
   while True:
     data = client1_socket.recv(1024)
+    data = extract_json(data)
     print(data)
     client2_socket.sendall(data)
     print("SENT")
@@ -14,9 +15,26 @@ def handle_client1(client1_socket, client2_socket):
 def handle_client2(client1_socket, client2_socket):
   while True:
     data = client2_socket.recv(1024)
+    data = extract_json(data)
     print(data)
     client1_socket.sendall(data)
     print("SENT2")
+
+def extract_json(binary_data):
+  # Find the index of the null character '\x00'
+  null_char_index = binary_data.find(b'\x00')
+
+  # Extract the binary part
+  binary_part = binary_data[null_char_index:]
+
+  # Extract the JSON part
+  json_part = b'{' + binary_part.split(b'{')[-1]
+
+  # Optionally, you can remove any trailing null characters or whitespaces
+  json_part = json_part.rstrip(b'\x00').strip()
+
+  return json_part
+
 
 # Main function to start the server
 def main():
