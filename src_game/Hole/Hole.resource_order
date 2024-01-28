@@ -56,6 +56,7 @@
     {"name":"sprPlayer1","order":4,"path":"sprites/sprPlayer1/sprPlayer1.yy",},
     {"name":"sprLogo","order":2,"path":"sprites/sprLogo/sprLogo.yy",},
     {"name":"sprLosePallette","order":1,"path":"sprites/sprLosePallette/sprLosePallette.yy",},
+    {"name":"oGameState","order":9,"path":"objects/oGameState/oGameState.yy",},
     {"name":"sprStage","order":7,"path":"sprites/sprStage/sprStage.yy",},
     {"name":"sprPresenter","order":9,"path":"sprites/sprPresenter/sprPresenter.yy",},
     {"name":"sprScore","order":10,"path":"sprites/sprScore/sprScore.yy",},

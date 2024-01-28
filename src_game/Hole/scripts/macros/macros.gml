@@ -13,6 +13,7 @@ global.NINJA =
 global.TPOSE =
 {
 	s2h: 90,
+	s2w: 270.08,
 	s2re: 0,
 	re2rw: 0,
 	s2le: 180,
@@ -28,6 +29,7 @@ global.TPOSE =
 global.PlayerPose =
 {
 	s2h: 90,
+	s2w: 270.08,
 	s2re: 0,
 	re2rw: 0,
 	s2le: 180,
@@ -42,7 +44,8 @@ global.OtherPlayerPose =
 {
 	s2h: 90,
 	s2re: 0,
-	re2rw: 0,
+	re2rw: 270,
+	s2w: 287.08,
 	s2le: 180,
 	le2lw: 180,
 	h2rk: 360 - 60,

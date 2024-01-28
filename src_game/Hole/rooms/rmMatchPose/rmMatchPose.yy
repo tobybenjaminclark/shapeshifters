@@ -13,6 +13,7 @@
     {"name":"inst_7E4D7ED9","path":"rooms/rmMatchPose/rmMatchPose.yy",},
     {"name":"inst_5245D90E","path":"rooms/rmMatchPose/rmMatchPose.yy",},
     {"name":"inst_603B4B49","path":"rooms/rmMatchPose/rmMatchPose.yy",},
+    {"name":"inst_4F2E4203","path":"rooms/rmMatchPose/rmMatchPose.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -23,6 +24,7 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"StartOther","depth":100,"effectEnabled":true,"effectType":"_filter_stripes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7DEAF1F4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oOtherPlayerPose","path":"objects/oOtherPlayerPose/oOtherPlayerPose.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1024.0,"y":352.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4F2E4203","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGameState","path":"objects/oGameState/oGameState.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":672.0,},
       ],"layers":[],"properties":[
         {"name":"g_StripesWidth","type":0,"value":"64",},
         {"name":"g_StripesDirection","type":0,"value":"0",},
