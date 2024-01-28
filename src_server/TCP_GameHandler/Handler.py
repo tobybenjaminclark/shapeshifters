@@ -61,7 +61,7 @@ def update_clients(client1_socket, client2_socket):
   global B_3_accuracy
   
   while True:
-    time.sleep(0.01)
+    time.sleep(0.5)
     data = {
       "readya": A_ready,
       "readyb": B_ready,
