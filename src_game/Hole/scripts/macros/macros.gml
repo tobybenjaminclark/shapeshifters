@@ -7,15 +7,17 @@ global.player_id = "b";
 global.opponent_id = "a";
 global.game_id = -1;
 
-global.player_1_accuracy = -1;
-global.player_2_accuracy = -1;
-global.player_3_accuracy = -1;
-global.opponent_1_accuracy = -1;
-global.opponent_2_accuracy = -1;
-global.opponent_3_accuracy = -1;
+global.jsonData = {};
+global.jsonData.readyb = "false";
+global.jsonData.readya = "false";
+global.jsonData.a_1_accuracy = -1;
+global.jsonData.a_2_accuracy = -1;
+global.jsonData.a_3_accuracy = -1;
 
-global.player_ready = "false";
-global.opponent_ready = "false";
+global.jsonData.b_1_accuracy = -1;
+global.jsonData.b_2_accuracy = -1;
+global.jsonData.b_3_accuracy = -1;
+
 
 global.queued_room = -1;
 
