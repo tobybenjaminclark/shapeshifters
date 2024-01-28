@@ -20,6 +20,7 @@
     {"name":"Timelines","order":14,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"oDataClient","order":14,"path":"objects/oDataClient/oDataClient.yy",},
     {"name":"oTCPClient","order":3,"path":"objects/oTCPClient/oTCPClient.yy",},
     {"name":"sprLogoOverlay","order":5,"path":"sprites/sprLogoOverlay/sprLogoOverlay.yy",},
     {"name":"sprWhatPlayerAreYou","order":14,"path":"sprites/sprWhatPlayerAreYou/sprWhatPlayerAreYou.yy",},
@@ -33,6 +34,7 @@
     {"name":"sprUpperArm","order":2,"path":"sprites/sprUpperArm/sprUpperArm.yy",},
     {"name":"rmMatchPose","order":2,"path":"rooms/rmMatchPose/rmMatchPose.yy",},
     {"name":"sprPodiumPallette","order":3,"path":"sprites/sprPodiumPallette/sprPodiumPallette.yy",},
+    {"name":"oRoomManager","order":13,"path":"objects/oRoomManager/oRoomManager.yy",},
     {"name":"set_game_poses","order":4,"path":"scripts/set_game_poses/set_game_poses.yy",},
     {"name":"rmLose","order":5,"path":"rooms/rmLose/rmLose.yy",},
     {"name":"sprFoot","order":5,"path":"sprites/sprFoot/sprFoot.yy",},
@@ -45,6 +47,7 @@
     {"name":"oReady","order":7,"path":"objects/oReady/oReady.yy",},
     {"name":"oComputerVisionClient","order":2,"path":"objects/oComputerVisionClient/oComputerVisionClient.yy",},
     {"name":"sprBegin","order":1,"path":"sprites/sprBegin/sprBegin.yy",},
+    {"name":"send_json_data","order":6,"path":"scripts/send_json_data/send_json_data.yy",},
     {"name":"sprLobbyLights","order":4,"path":"sprites/sprLobbyLights/sprLobbyLights.yy",},
     {"name":"sprForearm","order":3,"path":"sprites/sprForearm/sprForearm.yy",},
     {"name":"oInitializer","order":9,"path":"objects/oInitializer/oInitializer.yy",},

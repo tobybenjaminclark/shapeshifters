@@ -38,6 +38,7 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"oDataClient","path":"objects/oDataClient/oDataClient.yy",},},
     {"id":{"name":"oTCPClient","path":"objects/oTCPClient/oTCPClient.yy",},},
     {"id":{"name":"sprLogoOverlay","path":"sprites/sprLogoOverlay/sprLogoOverlay.yy",},},
     {"id":{"name":"sprWhatPlayerAreYou","path":"sprites/sprWhatPlayerAreYou/sprWhatPlayerAreYou.yy",},},
@@ -52,6 +53,7 @@
     {"id":{"name":"sprUpperArm","path":"sprites/sprUpperArm/sprUpperArm.yy",},},
     {"id":{"name":"rmMatchPose","path":"rooms/rmMatchPose/rmMatchPose.yy",},},
     {"id":{"name":"sprPodiumPallette","path":"sprites/sprPodiumPallette/sprPodiumPallette.yy",},},
+    {"id":{"name":"oRoomManager","path":"objects/oRoomManager/oRoomManager.yy",},},
     {"id":{"name":"set_game_poses","path":"scripts/set_game_poses/set_game_poses.yy",},},
     {"id":{"name":"rmLose","path":"rooms/rmLose/rmLose.yy",},},
     {"id":{"name":"sprFoot","path":"sprites/sprFoot/sprFoot.yy",},},
@@ -68,6 +70,7 @@
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},
     {"id":{"name":"sprWinPallett","path":"sprites/sprWinPallett/sprWinPallett.yy",},},
     {"id":{"name":"sprBegin","path":"sprites/sprBegin/sprBegin.yy",},},
+    {"id":{"name":"send_json_data","path":"scripts/send_json_data/send_json_data.yy",},},
     {"id":{"name":"sprLobbyLights","path":"sprites/sprLobbyLights/sprLobbyLights.yy",},},
     {"id":{"name":"sprForearm","path":"sprites/sprForearm/sprForearm.yy",},},
     {"id":{"name":"oInitializer","path":"objects/oInitializer/oInitializer.yy",},},

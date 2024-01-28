@@ -1,6 +1,24 @@
 
 #macro SCALING_FACTOR 0.5
 
+global.data_map = ds_map_create();
+
+global.player_id = "A";
+global.opponent_id = "B";
+global.game_id = 1;
+
+global.player_1_accuracy = -1;
+global.player_2_accuracy = -1;
+global.player_3_accuracy = -1;
+global.opponent_1_accuracy = -1;
+global.opponent_2_accuracy = -1;
+global.opponent_3_accuracy = -1;
+
+global.player_ready = false;
+global.opponent_ready = false;
+
+global.queued_room = -1;
+
 global.player_points = 0;
 
 /* Default Poses */

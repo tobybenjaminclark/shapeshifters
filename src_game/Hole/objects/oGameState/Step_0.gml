@@ -9,7 +9,7 @@ switch(state)
 			global.announcement = "Gamers Rise Up! Do your best T-Pose.";
 			state_0_announcement_shown = true;
 			start_time = current_time;
-			room_goto(rmAnnouncement);	
+			global.queued_room = rmAnnouncement;	
 		}
 		else if(state_0_announcement_shown)
 		{
@@ -18,7 +18,7 @@ switch(state)
 			draw_text(x, y, elapsedTime);
 			if(elapsedTime >= 2000)
 			{
-				room_goto(rmMatchPose);
+				global.queued_room = rmMatchPose;
 				start_time = current_time;
 				state = 1;
 			}
@@ -44,7 +44,7 @@ switch(state)
 				
 				state_1_announcement_shown = true;
 				start_time2 = current_time;
-				room_goto(rmAnnouncement);	
+				global.queued_room = rmAnnouncement;
 			}
 			else if(state_1_announcement_shown)
 			{
@@ -53,7 +53,7 @@ switch(state)
 				draw_text(x, y, elapsedTime);
 				if(elapsedTime >= 4000)
 				{
-					room_goto(rmMatchPose);
+					global.queued_room = rmMatchPose;
 					start_time = current_time;
 					state = 2;
 				}
@@ -75,7 +75,7 @@ switch(state)
 				global.announcement = "You scored an accuracy of " + string(state_2_max_accuracy) + "\nShow me your best Kung Fu Kick!";
 				state_2_announcement_shown = true;
 				start_time2 = current_time;
-				room_goto(rmAnnouncement);	
+				global.queued_room = rmAnnouncement;
 			}
 			else if(state_2_announcement_shown)
 			{
@@ -84,7 +84,7 @@ switch(state)
 				draw_text(x, y, elapsedTime);
 				if(elapsedTime >= 4000)
 				{
-					room_goto(rmMatchPose);
+					global.queued_room = rmMatchPose;
 					start_time = current_time;
 					state = 3;
 				}
@@ -106,7 +106,7 @@ switch(state)
 				global.announcement = "You scored an accuracy of " + string(state_3_max_accuracy) + "\nChallenge your opponent, pull a pose\n they have to replicate";
 				state_3_announcement_shown = true;
 				start_time2 = current_time;
-				room_goto(rmAnnouncement);	
+				global.queued_room = rmAnnouncement;	
 			}
 			else if(state_3_announcement_shown)
 			{
@@ -115,7 +115,7 @@ switch(state)
 				draw_text(x, y, elapsedTime);
 				if(elapsedTime >= 4000)
 				{
-					room_goto(rmMatchPose);
+					global.queued_room = rmMatchPose;
 					start_time = current_time;
 					state = 4;
 				}
@@ -132,7 +132,7 @@ switch(state)
 				global.announcement = "Your opponent wants you to\n replicate this";
 				state_4_announcement_shown = true;
 				start_time2 = current_time;
-				room_goto(rmAnnouncement);	
+				global.queued_room = rmAnnouncement;	
 			}
 			else if(state_4_announcement_shown)
 			{
@@ -141,7 +141,7 @@ switch(state)
 				draw_text(x, y, elapsedTime);
 				if(elapsedTime >= 4000)
 				{
-					room_goto(rmMatchPose);
+					global.queued_room = rmMatchPose;
 					start_time = current_time;
 					state = 5;
 				}
@@ -158,7 +158,7 @@ switch(state)
 				global.announcement = "Lets see if you shifted your shapes!";
 				state_4_announcement_shown = true;
 				start_time2 = current_time;
-				room_goto(rmAnnouncement);	
+				global.queued_room = rmAnnouncement;
 			}
 			else if(state_4_announcement_shown)
 			{
@@ -167,7 +167,7 @@ switch(state)
 				draw_text(x, y, elapsedTime);
 				if(elapsedTime >= 4000)
 				{
-					room_goto(rmWinner);
+					global.queued_room = rmWinner;
 					start_time = current_time;
 					state = 0;
 					instance_destroy(self);
