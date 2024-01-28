@@ -3,7 +3,7 @@
 
 if(waiting == true)
 {
-	if(global.player_ready && global.opponent_ready)
+	if(global.player_ready == "true" && global.opponent_ready == "true")
 	{
 		global.queued_room = rmMatchPose;
 	}

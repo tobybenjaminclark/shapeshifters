@@ -39,7 +39,7 @@ function send_json_data()
 	}
 	
 
-    json_data = json_stringify(global.data_map);
+    json_data = json_stringify(dataStruct);
 	show_debug_message(json_data);
     
     var t_buffer = buffer_create(256, buffer_grow, 1);

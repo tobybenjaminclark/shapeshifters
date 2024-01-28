@@ -14,8 +14,8 @@ global.opponent_1_accuracy = -1;
 global.opponent_2_accuracy = -1;
 global.opponent_3_accuracy = -1;
 
-global.player_ready = false;
-global.opponent_ready = false;
+global.player_ready = "false";
+global.opponent_ready = "false";
 
 global.queued_room = -1;
 
