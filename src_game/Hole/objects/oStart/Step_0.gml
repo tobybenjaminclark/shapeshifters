@@ -3,7 +3,7 @@
 
 if(waiting == true)
 {
-	if(global.jsonData.bready == "true" && global.jsonData.aready == "true")
+	if(global.jsonData.readyb == "true" && global.jsonData.readya == "true")
 	{
 		global.queued_room = rmMatchPose;
 	}

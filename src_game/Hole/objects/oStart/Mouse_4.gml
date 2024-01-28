@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.player_ready = "true";
-global.jsonData.aready = "true";
+// Send Ready B
+global.jsonData.readyb = "true";
+send_json_data();
+
 waiting = true;
