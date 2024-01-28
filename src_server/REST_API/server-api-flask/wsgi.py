@@ -1,5 +1,4 @@
-from app import app
+from RESTAPI import app
 
 if __name__ == "__main__":
     app.run()
-git staticmethod
