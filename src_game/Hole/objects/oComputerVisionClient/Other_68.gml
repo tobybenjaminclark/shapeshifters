@@ -112,7 +112,7 @@ else
 		}
 		else
 		{
-			global.opponent_ready = jsonData.a_ready;
+			global.opponent_ready = jsonData.b_ready;
 		}
 	}
 	
@@ -124,7 +124,7 @@ else
 		}
 		else
 		{
-			global.opponent_ready = jsonData.b_ready;
+			global.opponent_ready = jsonData.a_ready;
 		}
 	}
 }
