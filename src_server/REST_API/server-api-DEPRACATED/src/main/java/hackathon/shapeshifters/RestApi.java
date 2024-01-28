@@ -1,11 +1,17 @@
 package hackathon.shapeshifters;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.Collections;
 import java.util.Map;
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
+import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerFactory;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,8 +38,17 @@ public class RestApi {
   public static void main(String[] args) {
     readyA = false;
     readyB = false;
-    System.setProperty("server.address", "0.0.0.0");
+    SpringApplication app = new SpringApplication(RestApi.class);
+    app.setDefaultProperties(Collections.singletonMap("server.port", "8083"));
     SpringApplication.run(RestApi.class, args);
+    app.setDefaultProperties(Collections.singletonMap("server.address", "0.0.0.0"));
+  }
+
+  @Bean
+  public ConfigurableServletWebServerFactory webServerFactory() throws UnknownHostException {
+      TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory();
+      factory.setAddress(InetAddress.getByName("0.0.0.0")); // Set server address
+      return factory;
   }
 
   @PostMapping(
