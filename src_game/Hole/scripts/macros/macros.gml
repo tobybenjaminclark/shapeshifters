@@ -5,6 +5,10 @@
 global.DAB =
 {rk2rf: 267.62, lk2lf: 269.85, s2h: 111.96, s2le: 179.54, s2re: 11.55, s2w: 277.98, h2lk: 269.85, h2rk : 265.29, re2rw: 15.52, le2lw: 34.65 };
 
+global.NINJA = 
+{lk2lf: 279.64, rk2rf: 22.73, h2lk: 279.64, h2rk: 22.73, s2le: 206.54, s2re:
+20.74, le2lw: 48.17, re2rw: 32.94, s2h: 94.42, s2w: 287.08};
+
 /* Default Poses */
 global.TPOSE =
 {
