@@ -4,7 +4,7 @@
 vx += 1;
 if(vx == 100)
 {
-	audio_play_sound(sndLobby, 1, true);
+	audio_play_sound(GameMusic2, 1, true);
 	room_goto(rmLobby);
 }
 

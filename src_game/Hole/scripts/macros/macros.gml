@@ -4,7 +4,7 @@
 global.sending_data = false;
 
 global.data_map = ds_map_create();
-global.highlight_pose = global.TPOSE;
+
 
 global.player_id = "b";
 global.opponent_id = "a";
@@ -20,8 +20,6 @@ global.jsonData.a_3_accuracy = -1;
 global.jsonData.b_1_accuracy = -1;
 global.jsonData.b_2_accuracy = -1;
 global.jsonData.b_3_accuracy = -1;
-
-global.high
 
 global.queued_room = -1;
 
@@ -50,6 +48,7 @@ global.TPOSE =
 	lk2lf: 360 - 120
 };
 
+global.highlight_pose = global.TPOSE;
 
 /* Player & Other Player Poses */
 global.PlayerPose =
