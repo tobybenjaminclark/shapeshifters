@@ -40,7 +40,7 @@ function send_json_data()
 	}
 	*/
 	
-	global.jsonData.a_1_accuracy = 100;
+	// global.jsonData.a_1_accuracy = -1;
     json_data = json_stringify(global.jsonData);
 	show_debug_message(json_data);
     
