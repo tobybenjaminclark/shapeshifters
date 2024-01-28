@@ -3,8 +3,8 @@ import time
 import socket
 import threading
 
-A_ready = False
-B_ready = False
+A_ready = "false"
+B_ready = "false"
 
 A_1_accuracy = -1.0
 A_2_accuracy = -1.0
@@ -31,10 +31,10 @@ def handle_client(client_socket):
     print("Recieved JSON: " + json_string)
     data = json.loads(json_string)
     
-    if data["readya"]:
-       A_ready = True
-    if data["readyb"]:
-      B_ready = True
+    if data["readya"] == "true":
+       A_ready = "true"
+    if data["readyb"] == "true":
+      B_ready = "true"
       
     if data["a_1_accuracy"] > 0:
       A_1_accuracy = data["b_1_accuracy"]
