@@ -26,10 +26,11 @@ def handle_client(client_socket):
   
   while True:
     data = client_socket.recv(1024)
-    data = extract_json(data)
-    json_string = data.decode('utf-8')  # Assuming UTF-8 encoding
+    # data = extract_json(data)
+    json_string = data.decode('latin-1')  # Assuming UTF-8 encoding
     print("Recieved JSON: " + json_string)
-    data = json.loads(json_string)
+    real_json = extract_between_curly_brackets(json_string)
+    data = json.loads(real_json)
     print(data)
     
     if data["readya"] == "true":
@@ -50,6 +51,16 @@ def handle_client(client_socket):
       A_1_accuracy = data["b_2_accuracy"]
     if data["b_3_accuracy"] > 0:
       A_1_accuracy = data["b_3_accuracy"] 
+      
+def extract_between_curly_brackets(input_string):
+    start_index = input_string.find('{') + 1  # Find the index of the first '{' and move one position forward
+    end_index = input_string.find('}', start_index)  # Find the index of the first '}' after the start index
+
+    if start_index != -1 and end_index != -1:
+        result = input_string[start_index:end_index]
+        return "{"+result+"}"
+    else:
+        return None   
       
 def update_clients(client1_socket, client2_socket):
   global A_ready
