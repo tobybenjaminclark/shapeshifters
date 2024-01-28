@@ -5,6 +5,8 @@ buffer_seek(buffer, buffer_seek_start,0);
 // read packet 🙂
 var data = buffer_read(buffer, buffer_string);//mousepos
 
+
+
 try
 {
     jsonData = json_parse(data)
@@ -14,6 +16,8 @@ catch(e)
 {
     return;
 }
+
+
 
 if(variable_struct_exists(jsonData, "cv"))
 {

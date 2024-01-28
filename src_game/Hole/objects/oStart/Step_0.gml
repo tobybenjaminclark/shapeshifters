@@ -8,7 +8,6 @@ if(waiting == true)
 	{
 		global.queued_room = rmMatchPose;
 	}
-	
 }
 
 
