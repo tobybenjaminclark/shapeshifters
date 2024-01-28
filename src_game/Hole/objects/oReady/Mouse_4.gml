@@ -14,7 +14,7 @@ if(global.player_ready == false)
 		global.opponent_id = "a";
 	}
 
-	global.player_ready = true;
+	global.player_ready = "true";
 	global.queued_room = rmMatchPose;
 }
 

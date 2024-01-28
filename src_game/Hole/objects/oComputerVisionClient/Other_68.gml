@@ -104,27 +104,27 @@ else
 		}
 	}
 	
-	if(variable_struct_exists(jsonData, "a_ready"))
+	if(variable_struct_exists(jsonData, "readya"))
 	{
 		if(global.player_id == "a")
 		{
-			global.player_ready = jsonData.a_ready;
+			global.player_ready = jsonData.readya;
 		}
 		else
 		{
-			global.opponent_ready = jsonData.a_ready;
+			global.opponent_ready = jsonData.readya;
 		}
 	}
 	
-	if(variable_struct_exists(jsonData, "b_ready"))
+	if(variable_struct_exists(jsonData, "readyb"))
 	{
 		if(global.player_id == "b")
 		{
-			global.player_ready = jsonData.b_ready;
+			global.player_ready = jsonData.readyb;
 		}
 		else
 		{
-			global.opponent_ready = jsonData.b_ready;
+			global.opponent_ready = jsonData.readyb;
 		}
 	}
 }

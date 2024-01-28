@@ -3,8 +3,8 @@
 
 global.data_map = ds_map_create();
 
-global.player_id = "";
-global.opponent_id = "";
+global.player_id = "b";
+global.opponent_id = "a";
 global.game_id = -1;
 
 global.player_1_accuracy = -1;
@@ -14,8 +14,8 @@ global.opponent_1_accuracy = -1;
 global.opponent_2_accuracy = -1;
 global.opponent_3_accuracy = -1;
 
-global.player_ready = false;
-global.opponent_ready = false;
+global.player_ready = "false";
+global.opponent_ready = "false";
 
 global.queued_room = -1;
 
