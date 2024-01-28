@@ -29,11 +29,16 @@ switch(state)
 		var elapsedTime = current_time - start_time;
 		draw_text(x, y, elapsedTime);
 		// Calculate current accuracy
+		
+		// Player & Opponent Accuracy
 		var player_1_accuracy = calc_accuracy(global.PlayerPose, global.TPOSE, 5);
 		if(player_1_accuracy > state_1_max_accuracy) state_1_max_accuracy = player_1_accuracy;
 		
+		var opp1 = calc_accuracy(global.OtherPlayerPose, global.TPOSE, 5);
+		if(opp1 > state_1_max_accuracy_opp) state_1_max_accuracy_opp = opp1;
+		
+		
 		/* SETTING ACCURACY FOR 1 */
-		global.b_1_accuracy = player_1_accuracy;
 			
 		
 		if(elapsedTime >= 10000)
@@ -53,12 +58,9 @@ switch(state)
 			{
 				// Has enough time passed?
 				var elapsedTime = current_time - start_time2;
-				var op_accuracy = global.a_1_accuracy; // <-- Global A2 Accuracy
 				draw_text(x, y, elapsedTime);
-				if(elapsedTime >= 4000
-				&& op_accuracy != -1)
+				if(elapsedTime >= 4000)
 				{
-					global.opponent_score1 = round(opp_accuracy / 10);
 					global.queued_room = rmMatchPose;
 					start_time = current_time;
 					state = 2;
@@ -72,7 +74,8 @@ switch(state)
 		if(player_2_accuracy > state_2_max_accuracy) state_2_max_accuracy = player_2_accuracy;
 		
 		/* Accuracy AGAIN! */
-		global.b_2_accuracy = player_2_accuracy;
+		var opp2 = calc_accuracy(global.OtherPlayerPose, global.DAB, 5);
+		if(opp2 > state_2_max_accuracy_opp) state_2_max_accuracy_opp = opp2;
 		
 		var elapsedTime = current_time - start_time;
 		draw_text(x, y, elapsedTime);
@@ -90,12 +93,9 @@ switch(state)
 			{
 				// Has enough time passed?
 				var elapsedTime = current_time - start_time2;
-				var op_accuracy = global.a_2_accuracy; // <-- Global A2 Accuracy
 				draw_text(x, y, elapsedTime);
-				if(elapsedTime >= 4000
-				&& op_accuracy != -1) // <-- A2 ACCURACY
+				if(elapsedTime >= 4000) // <-- A2 ACCURACY
 				{
-					global.opponent_score2 = round(opp_accuracy / 10);
 					global.queued_room = rmMatchPose;
 					start_time = current_time;
 					state = 3;
@@ -109,8 +109,9 @@ switch(state)
 		if(player_3_accuracy > state_3_max_accuracy) state_3_max_accuracy = player_3_accuracy;
 	
 		/* Accuracy AGAIN AGAIN! */
-		global.b_3_accuracy = player_3_accuracy;
-	
+		var opp3 = calc_accuracy(global.OtherPlayerPose, global.DAB, 5);
+		if(opp3 > state_3_max_accuracy_opp) state_3_max_accuracy_opp = opp3;
+		
 		var elapsedTime = current_time - start_time;
 		draw_text(x, y, elapsedTime);
 		if(elapsedTime >= 10000)
@@ -127,13 +128,10 @@ switch(state)
 			{
 				// Has enough time passed?
 				var elapsedTime = current_time - start_time2;
-				var op_accuracy = global.a_3_accuracy; // <-- Global A3 Accuracy
 				draw_text(x, y, elapsedTime);
-				if(elapsedTime >= 4000
-				&& op_accuracy != -1) 
+				if(elapsedTime >= 4000) 
 				{
 					global.player_points3 = round(state_3_max_accuracy / 10);
-					global.opponent_score3 = round(opp_accuracy / 10);
 					
 					global.queued_room = rmMatchPose;
 					start_time = current_time;
@@ -149,7 +147,7 @@ switch(state)
 		{
 			if(!state_4_announcement_shown)
 			{
-				global.announcement = "Your opponent wants you to\n replicate this";
+				global.announcement = "Who is going to win?";
 				state_4_announcement_shown = true;
 				start_time2 = current_time;
 				global.queued_room = rmAnnouncement;	
@@ -161,9 +159,20 @@ switch(state)
 				draw_text(x, y, elapsedTime);
 				if(elapsedTime >= 4000)
 				{
-					global.queued_room = rmMatchPose;
+					
 					start_time = current_time;
-					state = 5;
+					
+					var opp_score = state_3_max_accuracy_opp + state_2_max_accuracy_opp + state_1_max_accuracy_opp;
+					var plyr_score = state_3_max_accuracy + state_2_max_accuracy + state_1_max_accuracy;
+					
+					if(opp_score > plyr_score)
+					{
+						global.queued_room = rmLose;
+					}
+					else
+					{
+						global.queued_room = rmWinner;
+					}
 				}
 			}
 		}
