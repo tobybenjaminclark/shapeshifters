@@ -28,7 +28,7 @@ def handle_client(client_socket):
     data = client_socket.recv(1024)
     data = extract_json(data)
     json_string = data.decode('utf-8')  # Assuming UTF-8 encoding
-    print(json_string)
+    print("Recieved JSON: " + json_string)
     data = json.loads(json_string)
     
     if data["readyA"]:
@@ -74,7 +74,7 @@ def update_clients(client1_socket, client2_socket):
     }
     
     json_string = json.dumps(data)
-
+    print("Sent JSON: " + json_string)
     client1_socket.sendall(json_string.encode())
     client2_socket.sendall(json_string.encode())
   
