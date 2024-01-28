@@ -1,6 +1,8 @@
 
 #macro SCALING_FACTOR 0.5
 
+global.player_points = 0;
+
 /* Default Poses */
 global.DAB =
 {rk2rf: 267.62, lk2lf: 269.85, s2h: 111.96, s2le: 179.54, s2re: 11.55, s2w: 277.98, h2lk: 269.85, h2rk : 265.29, re2rw: 15.52, le2lw: 34.65 };
@@ -13,6 +15,7 @@ global.NINJA =
 global.TPOSE =
 {
 	s2h: 90,
+	s2w: 270.08,
 	s2re: 0,
 	re2rw: 0,
 	s2le: 180,
@@ -28,6 +31,7 @@ global.TPOSE =
 global.PlayerPose =
 {
 	s2h: 90,
+	s2w: 270.08,
 	s2re: 0,
 	re2rw: 0,
 	s2le: 180,
@@ -42,7 +46,8 @@ global.OtherPlayerPose =
 {
 	s2h: 90,
 	s2re: 0,
-	re2rw: 0,
+	re2rw: 270,
+	s2w: 287.08,
 	s2le: 180,
 	le2lw: 180,
 	h2rk: 360 - 60,

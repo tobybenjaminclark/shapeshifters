@@ -4,7 +4,7 @@
 // Main stuff rendering (head & body)
 // ------------
 // body
-draw_sprite_ext(sprBody, 0, x, y, SCALING_FACTOR, SCALING_FACTOR, 0, c_white, 1);
+draw_sprite_ext(sprBody, 0, x, y, SCALING_FACTOR, SCALING_FACTOR, pose.s2w, c_white, 1);
 // head
 draw_sprite_ext(sprHead, 0, x, (y - 70), SCALING_FACTOR, SCALING_FACTOR, pose.s2h, c_white, 1);
 // ------------
@@ -31,21 +31,33 @@ draw_sprite_ext(sprForearm, 0, rw_x, rw_y, SCALING_FACTOR, SCALING_FACTOR, pose.
 
 
 
+// Right Thigh Calculations
+rt_x = (x) + lengthdir_x(110, pose.s2w + 10);  // R X
+rt_y = (y) + lengthdir_y(110, pose.s2w + 10); // R Y
+
+
+// Left Thigh Calculations
+lt_x = (x) + lengthdir_x(110, pose.s2w - 10);  // R X
+lt_y = (y) + lengthdir_y(110, pose.s2w - 10); // R Y
+
+
+
+
 
 //	Draw Legs
 // -------------------
 // Draw Thighs
-draw_sprite_ext(sprThigh, 0, x - (30), y + (100), SCALING_FACTOR, SCALING_FACTOR, pose.h2lk, c_white, 1); // L
-draw_sprite_ext(sprThigh, 0, x + (30), y + (100), SCALING_FACTOR, SCALING_FACTOR, pose.h2rk, c_white, 1); // R
+draw_sprite_ext(sprThigh, 0, rt_x, rt_y, SCALING_FACTOR, SCALING_FACTOR, pose.h2rk, c_white, 1); // L
+draw_sprite_ext(sprThigh, 0, lt_x, lt_y, SCALING_FACTOR, SCALING_FACTOR, pose.h2lk, c_white, 1); // R
 
 // Right Shin Calculations
-rf_x = (x + 30) + lengthdir_x(110, pose.h2rk);  // R X
-rf_y = (y + 100) + lengthdir_y(110, pose.h2rk); // R Y
+rf_x = rt_x + lengthdir_x(110, pose.h2rk);  // R X
+rf_y = rt_y + lengthdir_y(110, pose.h2rk);  // R Y
 
 
 // Left Shin Calculations
-lf_x = (x - 30) + lengthdir_x(110, pose.h2lk);  // L X
-lf_y = (y + 100) + lengthdir_y(110, pose.h2lk); // L Y
+lf_x = lt_x + lengthdir_x(110, pose.h2lk);  // L X
+lf_y = lt_y + lengthdir_y(110, pose.h2lk);  // L Y
 
 // Draw Left & Right Shin
 draw_sprite_ext(sprFoot, 0, lf_x, lf_y, SCALING_FACTOR, SCALING_FACTOR, pose.lk2lf, c_white, 1); // L
