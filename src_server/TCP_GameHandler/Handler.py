@@ -64,7 +64,7 @@ def update_clients(client1_socket, client2_socket):
     time.sleep(0.01)
     data = {
       "readyA": A_ready,
-      "readyA": B_ready,
+      "readyB": B_ready,
       "A_1_accuracy": A_1_accuracy,
       "A_2_accuracy": A_2_accuracy,
       "A_3_accuracy": A_3_accuracy,
