@@ -26,8 +26,8 @@ def handle_client(client_socket):
   
   while True:
     data = client_socket.recv(1024)
-    data = extract_json(data)
-    json_string = data.decode('utf-8')  # Assuming UTF-8 encoding
+    # data = extract_json(data)
+    json_string = data.decode('latin-1')  # Assuming UTF-8 encoding
     print("Recieved JSON: " + json_string)
     data = json.loads(json_string)
     print(data)
