@@ -79,6 +79,7 @@
     {"id":{"name":"send_message","path":"scripts/send_message/send_message.yy",},},
     {"id":{"name":"oAnnounce","path":"objects/oAnnounce/oAnnounce.yy",},},
     {"id":{"name":"fntArialRounded","path":"fonts/fntArialRounded/fntArialRounded.yy",},},
+    {"id":{"name":"oOpponentScore","path":"objects/oOpponentScore/oOpponentScore.yy",},},
     {"id":{"name":"send_tcp_poses","path":"scripts/send_tcp_poses/send_tcp_poses.yy",},},
     {"id":{"name":"sprPlayer1","path":"sprites/sprPlayer1/sprPlayer1.yy",},},
     {"id":{"name":"sprLogo","path":"sprites/sprLogo/sprLogo.yy",},},

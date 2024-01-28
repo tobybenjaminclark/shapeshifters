@@ -8,6 +8,12 @@
 // State 4: Pull a pose
 // State 5: Match Opponent Pose
 
+// Opponent Points
+global.opponent_score1 = 0;
+global.opponent_score2 = 0;
+global.opponent_score3 = 0;
+
+// Player Points
 global.player_points1 = 0;
 global.player_points2 = 0;
 global.player_points3 = 0;

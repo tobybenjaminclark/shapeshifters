@@ -54,6 +54,7 @@
     {"name":"sprLobbyPallette","order":2,"path":"sprites/sprLobbyPallette/sprLobbyPallette.yy",},
     {"name":"send_message","order":1,"path":"scripts/send_message/send_message.yy",},
     {"name":"oAnnounce","order":11,"path":"objects/oAnnounce/oAnnounce.yy",},
+    {"name":"oOpponentScore","order":15,"path":"objects/oOpponentScore/oOpponentScore.yy",},
     {"name":"send_tcp_poses","order":3,"path":"scripts/send_tcp_poses/send_tcp_poses.yy",},
     {"name":"sprPlayer1","order":4,"path":"sprites/sprPlayer1/sprPlayer1.yy",},
     {"name":"sprLogo","order":2,"path":"sprites/sprLogo/sprLogo.yy",},
