@@ -58,7 +58,7 @@ def extract_between_curly_brackets(input_string):
 
     if start_index != -1 and end_index != -1:
         result = input_string[start_index:end_index]
-        return result
+        return "{"+result+"}"
     else:
         return None   
       
