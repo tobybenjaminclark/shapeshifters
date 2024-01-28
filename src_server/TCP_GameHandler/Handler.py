@@ -28,12 +28,12 @@ def handle_client(client_socket):
     data = client_socket.recv(1024)
     data = extract_json(data)
     json_string = data.decode('utf-8')  # Assuming UTF-8 encoding
-    print(json_string)
+    print("Recieved JSON: " + json_string)
     data = json.loads(json_string)
     
-    if data["readyA"]:
+    if data["a_ready"]:
        A_ready = True
-    if data["readyB"]:
+    if data["b_ready"]:
       B_ready = True
       
     if data["A_1_accuracy"] > 0:
@@ -63,8 +63,8 @@ def update_clients(client1_socket, client2_socket):
   while True:
     time.sleep(0.01)
     data = {
-      "readyA": A_ready,
-      "readyA": B_ready,
+      "a_ready": A_ready,
+      "b_ready": B_ready,
       "A_1_accuracy": A_1_accuracy,
       "A_2_accuracy": A_2_accuracy,
       "A_3_accuracy": A_3_accuracy,
@@ -74,7 +74,7 @@ def update_clients(client1_socket, client2_socket):
     }
     
     json_string = json.dumps(data)
-
+    print("Sent JSON: " + json_string)
     client1_socket.sendall(json_string.encode())
     client2_socket.sendall(json_string.encode())
   
