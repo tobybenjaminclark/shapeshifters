@@ -6,9 +6,9 @@ switch(state)
 	case 0: // Not started yet
 		if(!state_0_announcement_shown)
 		{
+			audio_stop_all();
+			audio_play_sound(GameMusic, 1, true);
 			global.highlight_pose = global.TPOSE;
-			global.jsonData.readya = false;
-			global.jsonData.readyb = false;
 			global.announcement = "Gamers Rise Up! Do your best T-Pose.";
 			state_0_announcement_shown = true;
 			start_time = current_time;
@@ -76,6 +76,10 @@ switch(state)
 	
 		var player_2_accuracy = calc_accuracy(global.PlayerPose, global.DAB, 5);
 		if(player_2_accuracy > state_2_max_accuracy) state_2_max_accuracy = player_2_accuracy;
+		
+		global.jsonData.readya = false;
+		global.jsonData.readyb = false;
+		send_json_data();
 		
 		/* Accuracy AGAIN! */
 		var opp2 = calc_accuracy(global.OtherPlayerPose, global.DAB, 5);
@@ -182,10 +186,13 @@ switch(state)
 					
 					if(opp_score > plyr_score)
 					{
+						audio_stop_all();
 						global.queued_room = rmLose;
 					}
 					else
 					{
+						audio_stop_all();
+						audio_play_sound(GameMusic, 1, true);
 						global.queued_room = rmWinner;
 					}
 				}
@@ -211,6 +218,7 @@ switch(state)
 				draw_text(x, y, elapsedTime);
 				if(elapsedTime >= 4000)
 				{
+					
 					global.queued_room = rmWinner;
 					start_time = current_time;
 					state = 0;
