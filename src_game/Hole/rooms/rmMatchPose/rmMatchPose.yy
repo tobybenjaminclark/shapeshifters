@@ -34,7 +34,7 @@
         {"name":"g_StripesAmplitude","type":0,"value":"0",},
         {"name":"g_StripesColours","type":0,"value":"4",},
         {"name":"g_StripesSharpness","type":0,"value":"0.5",},
-        {"name":"g_StripesPalette","type":2,"value":"sprLobbyPallette",},
+        {"name":"g_StripesPalette","type":2,"value":"sprLosePallette",},
       ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Start","depth":200,"effectEnabled":true,"effectType":"_filter_stripes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1E3F78B8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oPose","path":"objects/oPose/oPose.yy",},"properties":[
