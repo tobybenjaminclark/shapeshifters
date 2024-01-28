@@ -112,7 +112,7 @@ else
 		}
 		else
 		{
-			global.opponent_ready = jsonData.readyb;
+			global.opponent_ready = jsonData.readya;
 		}
 	}
 	
@@ -124,7 +124,7 @@ else
 		}
 		else
 		{
-			global.opponent_ready = jsonData.readya;
+			global.opponent_ready = jsonData.readyb;
 		}
 	}
 }
