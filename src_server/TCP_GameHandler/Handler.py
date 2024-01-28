@@ -14,6 +14,11 @@ B_1_accuracy = -1.0
 B_2_accuracy = -1.0
 B_3_accuracy = -1.0
 
+def threadFuse():
+  time.sleep(15)
+  A_ready = "false"
+  B_ready = "false"
+
 def handle_client(client_socket):
   global A_ready
   global B_ready
@@ -37,6 +42,10 @@ def handle_client(client_socket):
        A_ready = "true"
     if data["readyb"] == "true":
       B_ready = "true"
+      
+    if A_ready=="true" and B_ready=="true":
+      thread = threading.Thread(target=threadFuse, args=(1,))
+      thread.start()
       
     if data["a_1_accuracy"] > 0:
       A_1_accuracy = data["b_1_accuracy"]
