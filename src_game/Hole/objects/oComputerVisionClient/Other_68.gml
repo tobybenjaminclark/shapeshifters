@@ -127,4 +127,6 @@ else
 			global.opponent_ready = jsonData.readyb;
 		}
 	}
+	
+	global.jsonData = jsonData;
 }

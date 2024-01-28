@@ -4,7 +4,8 @@
 
 
 function send_json_data()
-{		   
+{	
+	/*
 	dataStruct = {}
 	if(global.player_id == "a")
 	{
@@ -37,9 +38,10 @@ function send_json_data()
 		dataStruct.b_2_accuracy = global.player_2_accuracy;
 		dataStruct.b_3_accuracy = global.player_3_accuracy;
 	}
+	*/
 	
 
-    json_data = json_stringify(dataStruct);
+    json_data = json_stringify(global.jsonData);
 	show_debug_message(json_data);
     
     var t_buffer = buffer_create(256, buffer_grow, 1);
