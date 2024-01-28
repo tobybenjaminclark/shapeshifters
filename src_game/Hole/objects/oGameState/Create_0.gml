@@ -8,6 +8,8 @@
 // State 4: Pull a pose
 // State 5: Match Opponent Pose
 
+global.player_points = 0;
+
 state = 0;
 
 state_0_announcement_shown = false;
@@ -16,3 +18,7 @@ state_2_announcement_shown = false;
 state_3_announcement_shown = false;
 state_4_announcement_shown = false;
 state_5_announcement_shown = false;
+
+state_1_max_accuracy = 0;
+state_2_max_accuracy = 0;
+state_3_max_accuracy = 0;
