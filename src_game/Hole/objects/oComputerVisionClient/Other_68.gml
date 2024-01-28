@@ -31,7 +31,7 @@ else
 {
 	// data json
 	// parse the data
-	
+	/*
 	if(variable_struct_exists(jsonData, "a_1_accuracy"))
 	{
 		if(global.player_id == "a")
@@ -127,6 +127,7 @@ else
 			global.opponent_ready = jsonData.readyb;
 		}
 	}
+	*/
 	
 	global.jsonData = jsonData;
 }
