@@ -142,12 +142,12 @@ def main():
 
     if conn1 and conn2:
       # Start thread to handle communication with client1
-      client1_thread = threading.Thread(target=handle_client, args=(conn1))
+      client1_thread = threading.Thread(target=handle_client, args=(conn1,))
       client1_thread.start()
       print("STARTED THREAD 1")
 
       # Start thread to handle communication with client2
-      client2_thread = threading.Thread(target=handle_client, args=(conn2))
+      client2_thread = threading.Thread(target=handle_client, args=(conn2,))
       client2_thread.start()
       print("STARTED THREAD 2")
       
