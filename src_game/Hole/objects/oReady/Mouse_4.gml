@@ -3,12 +3,12 @@
 
 if(global.player_ready == false)
 {
-	if(player == "A")
+	if(player == 1)
 	{
 		global.player_id = "A";
 		global.opponent_id = "B";
 	}
-	else if(player == "B")
+	else if(player == 2)
 	{
 		global.player_id = "B";
 		global.opponent_id = "A";
