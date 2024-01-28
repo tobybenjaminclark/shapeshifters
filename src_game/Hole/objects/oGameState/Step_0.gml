@@ -156,7 +156,9 @@ switch(state)
 					}
 					else
 					{
-						audio_play_sound(sndLobby, 1, false);
+						audio_stop_all()
+						audio_play_sound(sndLobby, 1, true);
+						audio_play_sound(Winner, 2, false);
 						instance_destroy(self);
 						global.queued_room = rmWinner;
 					}
