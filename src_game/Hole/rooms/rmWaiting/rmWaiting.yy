@@ -6,10 +6,7 @@
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
-  "instanceCreationOrder": [
-    {"name":"inst_6765C34D","path":"rooms/rmWaiting/rmWaiting.yy",},
-    {"name":"inst_18628E6","path":"rooms/rmWaiting/rmWaiting.yy",},
-  ],
+  "instanceCreationOrder": [],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"ShakeLayer","depth":0,"effectEnabled":true,"effectType":"_filter_twist_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
@@ -49,14 +46,7 @@
         {"name":"g_StripesSharpness","type":0,"value":"1.2",},
         {"name":"g_StripesPalette","type":2,"value":"sprLogoOverlay",},
       ],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Start","depth":300,"effectEnabled":true,"effectType":"_filter_stripes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6765C34D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oReady","path":"objects/oReady/oReady.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oReady","path":"objects/oReady/oReady.yy",},"propertyId":{"name":"player","path":"objects/oReady/oReady.yy",},"value":"1",},
-          ],"rotation":0.0,"scaleX":0.684,"scaleY":0.684,"x":230.0,"y":418.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_18628E6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oReady","path":"objects/oReady/oReady.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oReady","path":"objects/oReady/oReady.yy",},"propertyId":{"name":"player","path":"objects/oReady/oReady.yy",},"value":"2",},
-          ],"rotation":0.0,"scaleX":0.684,"scaleY":0.684,"x":842.0,"y":418.0,},
-      ],"layers":[],"properties":[
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Start","depth":300,"effectEnabled":true,"effectType":"_filter_stripes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[
         {"name":"g_StripesWidth","type":0,"value":"92",},
         {"name":"g_StripesDirection","type":0,"value":"186",},
         {"name":"g_StripesOffset","type":0,"value":"0",},
