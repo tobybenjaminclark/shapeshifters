@@ -30,6 +30,7 @@ def handle_client(client_socket):
     json_string = data.decode('utf-8')  # Assuming UTF-8 encoding
     print("Recieved JSON: " + json_string)
     data = json.loads(json_string)
+    print(data)
     
     if data["readya"] == "true":
        A_ready = "true"
