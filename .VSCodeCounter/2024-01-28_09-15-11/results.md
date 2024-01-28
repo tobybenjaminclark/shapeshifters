@@ -1,0 +1,47 @@
+# Summary
+
+Date : 2024-01-28 09:15:11
+
+Directory /Users/tobybenjaminclark/Documents/Personal/Hole/hole
+
+Total : 16 files,  751 codes, 76 comments, 243 blanks, all 1070 lines
+
+Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
+
+## Languages
+| language | files | code | comment | blank | total |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Python | 9 | 481 | 69 | 192 | 742 |
+| Java | 2 | 169 | 5 | 27 | 201 |
+| XML | 1 | 73 | 0 | 3 | 76 |
+| Markdown | 1 | 21 | 0 | 18 | 39 |
+| Java Properties | 3 | 7 | 2 | 3 | 12 |
+
+## Directories
+| path | files | code | comment | blank | total |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| . | 16 | 751 | 76 | 243 | 1,070 |
+| . (Files) | 1 | 21 | 0 | 18 | 39 |
+| src_computer_vision | 2 | 226 | 38 | 107 | 371 |
+| src_server | 13 | 504 | 38 | 118 | 660 |
+| src_server (Files) | 1 | 3 | 2 | 3 | 8 |
+| src_server/REST_API | 10 | 315 | 8 | 60 | 383 |
+| src_server/REST_API/server-api-DEPRACATED | 6 | 249 | 7 | 33 | 289 |
+| src_server/REST_API/server-api-DEPRACATED (Files) | 1 | 73 | 0 | 3 | 76 |
+| src_server/REST_API/server-api-DEPRACATED/src | 2 | 126 | 5 | 28 | 159 |
+| src_server/REST_API/server-api-DEPRACATED/src/main | 2 | 126 | 5 | 28 | 159 |
+| src_server/REST_API/server-api-DEPRACATED/src/main/java | 1 | 124 | 5 | 27 | 156 |
+| src_server/REST_API/server-api-DEPRACATED/src/main/java/hackathon | 1 | 124 | 5 | 27 | 156 |
+| src_server/REST_API/server-api-DEPRACATED/src/main/java/hackathon/shapeshifters | 1 | 124 | 5 | 27 | 156 |
+| src_server/REST_API/server-api-DEPRACATED/src/main/resources | 1 | 2 | 0 | 1 | 3 |
+| src_server/REST_API/server-api-DEPRACATED/target | 3 | 50 | 2 | 2 | 54 |
+| src_server/REST_API/server-api-DEPRACATED/target/classes | 2 | 47 | 0 | 1 | 48 |
+| src_server/REST_API/server-api-DEPRACATED/target/classes (Files) | 1 | 2 | 0 | 1 | 3 |
+| src_server/REST_API/server-api-DEPRACATED/target/classes/hackathon | 1 | 45 | 0 | 0 | 45 |
+| src_server/REST_API/server-api-DEPRACATED/target/classes/hackathon/shapeshifters | 1 | 45 | 0 | 0 | 45 |
+| src_server/REST_API/server-api-DEPRACATED/target/maven-archiver | 1 | 3 | 2 | 1 | 6 |
+| src_server/REST_API/server-api-flask | 4 | 66 | 1 | 27 | 94 |
+| src_server/TCP_GameHandler | 1 | 132 | 14 | 35 | 181 |
+| src_server/TCP_Relay | 1 | 54 | 14 | 20 | 88 |
+
+Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)

@@ -9,7 +9,8 @@ switch(state)
 			audio_stop_all();
 			audio_play_sound(GameMusic, 1, true);
 			global.highlight_pose = global.TPOSE;
-			global.announcement = "Gamers Rise Up! Do your best T-Pose.";
+			audio_play_sound(STARFISH, 1, false);
+			global.announcement = "You're the best! Do\n a star!";
 			state_0_announcement_shown = true;
 			start_time = current_time;
 			global.queued_room = rmAnnouncement;	
@@ -49,7 +50,8 @@ switch(state)
 			if(!state_1_announcement_shown)
 			{
 				global.highlight_pose = global.DAB;
-				global.announcement = "You got an accuracy of " + string(state_1_max_accuracy) + "\nIt's 2017, Hit a usain bolt!";
+				global.announcement = "You got an accuracy of " + string(state_1_max_accuracy) + "\nReach up & do the Usain Bolt!";
+				audio_play_sound(USAIN, 1, false);
 				
 				// Award Points
 				global.player_points1 = round(state_1_max_accuracy / 10);
@@ -93,6 +95,7 @@ switch(state)
 			{
 				global.player_points2 = round(state_2_max_accuracy / 10);
 				global.highlight_pose = global.NINJA;
+				audio_play_sound(NINJAKICK, 1, false);
 				global.announcement = "You scored an accuracy of " + string(state_2_max_accuracy) + "\nShow me your best Kung Fu Kick!";
 				state_2_announcement_shown = true;
 				start_time2 = current_time;
@@ -147,13 +150,17 @@ switch(state)
 					
 					if(opp_score > plyr_score)
 					{
+						audio_play_sound(Loser, 1, false);
 						global.queued_room = rmLose;
 						instance_destroy(self);
 					}
 					else
 					{
-						instance_destroy(self);
+						audio_stop_all()
+						audio_play_sound(sndLobby, 1, true);
+						audio_play_sound(Winner, 2, false);
 						global.queued_room = rmWinner;
+						instance_destroy(self);
 					}
 				}
 			}

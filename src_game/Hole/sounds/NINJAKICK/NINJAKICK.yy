@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "GameMusic",
+  "name": "NINJAKICK",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 29.000273,
+  "duration": 5.461333,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "GameMusic.wav",
+  "soundFile": "NINJAKICK.wav",
   "type": 0,
-  "volume": 0.11,
+  "volume": 1.0,
 }
