@@ -28,6 +28,7 @@ def handle_client(client_socket):
     data = client_socket.recv(1024)
     data = extract_json(data)
     json_string = data.decode('utf-8')  # Assuming UTF-8 encoding
+    print(json_string)
     data = json.loads(json_string)
     
     if data["readyA"]:
