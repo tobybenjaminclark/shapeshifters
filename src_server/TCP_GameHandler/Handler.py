@@ -46,7 +46,7 @@ def handle_client(client_socket):
       B_ready = "true"
       
     if A_ready=="true" and B_ready=="true":
-      thread = threading.Thread(target=threadFuse, args=(1,))
+      thread = threading.Thread(target=threadFuse)
       thread.start()
       
     if data["a_1_accuracy"] > 0:
