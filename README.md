@@ -13,8 +13,6 @@
   <p align="center">
     🕺 3rd Place at RoyalHackaway v7! Networked Computer-Vision Hole in the Wall Game deployed using OpenCV2, Tensorflow, GMS2, Azure, Python3, Java & REST.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://devpost.com/software/shapeshifters">View Devpost</a>
     ·
@@ -89,7 +87,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contributors
 [Amber Swarbrick](https://github.com/aswarbs) - Human Pose Estimation
+
 [Eden Hamilton](https://github.com/EdenH1234) - Networking & Multiplayer
+
 [Toby Clark](https://github.com/tobybenjaminclark) - Game Design & Interaction
 
 
